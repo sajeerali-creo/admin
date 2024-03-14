@@ -1,0 +1,38 @@
+.form-label {
+    font-size: 14px !important;
+}
+
+.form-control {
+    border: 1px solid var(--form-border) !important;
+    height: 42px!important;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary) !important;
+    border: 0;
+}
+
+.form-check-input:focus,
+.label::after,
+label.form-check-label:focus,
+.form-check-input::after,
+.form-check-input:not(:disabled):not(.disabled):active:focus {
+    color: black;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 0 0 0.1rem var(--primary) !important;
+}
+
+.field-icon {
+    right: 12px;
+    top: 8px;
+    position: absolute;
+    z-index: 2;
+    color: var(--text);
+}
+
+.form-gap {
+    max-width: 400px;
+}

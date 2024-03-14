@@ -1,4 +1,298 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Audiowide&family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=Micro+5&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Poiret+One&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
 .h-100-vh {
   min-height: 100vh;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  height: 42px !important;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark) !important;
+}
+
+.btn-g-account {
+  height: 42px;
+  border: 1px solid var(--form-border);
+  display: flex;
+  border-radius: 8px;
+  text-align: center;
+}
+.btn-g-account:hover {
+  color: var(--text);
+}
+
+.hover-blank:hover {
+  color: var(--text);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.h1 {
+  font-size: 30px !important;
+}
+
+.fs-4 {
+  font-size: 4px;
+}
+
+.fs-8 {
+  font-size: 8px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-4 {
+  font-size: 4px;
+}
+
+.fs-5 {
+  font-size: 5px;
+}
+
+.fs-6 {
+  font-size: 6px;
+}
+
+.fs-7 {
+  font-size: 7px;
+}
+
+.fs-8 {
+  font-size: 8px;
+}
+
+.fs-9 {
+  font-size: 9px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-19 {
+  font-size: 19px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-21 {
+  font-size: 21px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-23 {
+  font-size: 23px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-27 {
+  font-size: 27px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-29 {
+  font-size: 29px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-31 {
+  font-size: 31px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-33 {
+  font-size: 33px;
+}
+
+.fs-34 {
+  font-size: 34px;
+}
+
+.fs-35 {
+  font-size: 35px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-37 {
+  font-size: 37px;
+}
+
+.fs-38 {
+  font-size: 38px;
+}
+
+.fs-39 {
+  font-size: 39px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-41 {
+  font-size: 41px;
+}
+
+.fs-42 {
+  font-size: 42px;
+}
+
+.fs-43 {
+  font-size: 43px;
+}
+
+.fs-44 {
+  font-size: 44px;
+}
+
+.fs-45 {
+  font-size: 45px;
+}
+
+.fs-46 {
+  font-size: 46px;
+}
+
+.fs-47 {
+  font-size: 47px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+:root {
+  --white: #fff;
+  --primary: #00AFFF;
+  --black: #000;
+  --heading:#101828;
+  --text: #475467;
+  --form-border: #D0D5DD;
+  --primary-dark: #0297dc;
+}
+
+.text-color {
+  color: var(--text);
+  font-weight: 300;
+}
+
+.text-heading {
+  color: var(--heading);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.form-label {
+  font-size: 14px !important;
+}
+
+.form-control {
+  border: 1px solid var(--form-border) !important;
+  height: 42px !important;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary) !important;
+  border: 0;
+}
+
+.form-check-input:focus,
+.label::after,
+label.form-check-label:focus,
+.form-check-input::after,
+.form-check-input:not(:disabled):not(.disabled):active:focus {
+  color: black;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 0 0 0.1rem var(--primary) !important;
+}
+
+.field-icon {
+  right: 12px;
+  top: 8px;
+  position: absolute;
+  z-index: 2;
+  color: var(--text);
+}
+
+.form-gap {
+  max-width: 400px;
 }/*# sourceMappingURL=main.css.map */

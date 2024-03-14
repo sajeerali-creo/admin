@@ -1,0 +1,19 @@
+:root {
+    --white: #fff;
+    --primary: #00AFFF;
+    --black: #000;
+    --heading:#101828;
+    --text: #475467;
+    --form-border: #D0D5DD;
+    --primary-dark: #0297dc;
+}
+.text-color{
+    color: var(--text);
+    font-weight: 300;
+}
+.text-heading{
+    color: var(--heading);
+}
+.text-primary{
+    color: var(--primary)!important;
+}
