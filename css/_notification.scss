@@ -1,0 +1,19 @@
+.head{
+    width: 38px;
+    height: 38px;
+    background-color: #999;
+    border-radius: 160px;
+    flex: 0 0 auto;
+    img{
+        width: 100%;
+        height: 38px;
+        object-fit: cover;
+    }
+}
+.dot-active{
+    width: 10px;
+    height: 10px;
+    border-radius: 160px;
+    background-color: red;
+    flex: 0 0 auto;
+}

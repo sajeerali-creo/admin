@@ -36,3 +36,7 @@ label.form-check-label:focus,
 .form-gap {
     max-width: 400px;
 }
+
+.required .control-label:after {
+    content:"*";color:red;
+  }
