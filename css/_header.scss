@@ -59,6 +59,7 @@
     padding: 40px;
     .offcanvas-body{
         background-color: #10131B;
+        padding: 0px;
     }
     ul{
         padding: 0px;
@@ -69,7 +70,7 @@
         li{
             a{
                 text-decoration: none;
-                color: var(--text);
+                color: #6f819b;
             }
             .active{
                 color: var(--white);

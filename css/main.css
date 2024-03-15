@@ -102,6 +102,7 @@ body {
 }
 .offcanvas-start .offcanvas-body {
   background-color: #10131B;
+  padding: 0px;
 }
 .offcanvas-start ul {
   padding: 0px;
@@ -112,7 +113,7 @@ body {
 }
 .offcanvas-start ul li a {
   text-decoration: none;
-  color: var(--text);
+  color: #6f819b;
 }
 .offcanvas-start ul li .active {
   color: var(--white);
@@ -127,6 +128,10 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--white);
+}
+
+footer {
+  background-color: #101B37;
 }
 
 body {
@@ -364,9 +369,56 @@ body {
   color: var(--primary) !important;
 }
 
+.text-dim {
+  color: #6f819b !important;
+}
+
 .bg-gray {
   background-color: #EEEEEF;
   border-radius: 10px;
+}
+
+.light-blue {
+  background-color: #D6ECFA;
+}
+
+.light-brown {
+  background-color: #F0E5DE;
+}
+
+.light-green {
+  background-color: #E0F7F6;
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+@media (min-width: 992px) {
+  .padding-top {
+    padding-top: 130px;
+  }
+}
+
+.padding-bottom {
+  padding-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .padding-bottom {
+    padding-bottom: 130px;
+  }
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 24px;
+}
+@media (min-width: 992px) {
+  .box {
+    width: 242px;
+    height: 194px;
+  }
 }
 
 .form-label {
