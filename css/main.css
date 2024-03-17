@@ -61,8 +61,13 @@ ul {
 }
 
 .header-autharized {
-  background-color: #0E121E;
+  background-color: #101B37;
   height: 60px;
+}
+@media (min-width: 992px) {
+  .header-autharized {
+    height: 80px;
+  }
 }
 .header-autharized .logo img {
   height: 30px;
@@ -71,7 +76,7 @@ ul {
   width: 42px;
   height: 42px;
   border-radius: 160px;
-  background-color: #1F212B;
+  background-color: #242f50;
   color: #fff;
   display: flex;
   align-items: center;
@@ -81,7 +86,7 @@ ul {
   width: 42px;
   height: 42px;
   border-radius: 160px;
-  background-color: #1F212B;
+  background-color: #242f50;
   color: #fff;
   display: flex;
   align-items: center;

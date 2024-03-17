@@ -1,32 +1,40 @@
-.header-autharized{
-    background-color: #0E121E;
+.header-autharized {
+    background-color: #101B37;
     height: 60px;
-    .logo{
-        img{
+
+    @media (min-width: 992px) {
+        height: 80px;
+    }
+
+    .logo {
+        img {
             height: 30px;
         }
     }
-    .user-head{
+
+    .user-head {
         width: 42px;
         height: 42px;
         border-radius: 160px;
-        background-color: #1F212B;
+        background-color: #242f50;
         color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .notification{
+
+    .notification {
         width: 42px;
         height: 42px;
         border-radius: 160px;
-        background-color: #1F212B;
+        background-color: #242f50;
         color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
-        .dot{
+
+        .dot {
             width: 6px;
             height: 6px;
             border-radius: 160px;
@@ -38,7 +46,7 @@
     }
 }
 
-.btn-menu{
+.btn-menu {
     width: 37px;
     height: 37px;
     background-color: #1F212B;
@@ -51,35 +59,39 @@
     flex: 0 0 auto;
 }
 
-.offcanvas-start{
+.offcanvas-start {
     color: #fff;
-    width: 280px!important;
+    width: 280px !important;
     background-color: #10131B;
-    border-radius:0px 20px 20px 0px;
+    border-radius: 0px 20px 20px 0px;
     padding: 40px;
-    .offcanvas-body{
+
+    .offcanvas-body {
         background-color: #10131B;
         padding: 0px;
     }
-    ul{
+
+    ul {
         padding: 0px;
         list-style: none;
         display: flex;
         flex-direction: column;
         gap: 24px;
-        li{
-            a{
+
+        li {
+            a {
                 text-decoration: none;
                 color: #6f819b;
             }
-            .active{
+
+            .active {
                 color: var(--white);
             }
         }
     }
 }
 
-.user-head-big{
+.user-head-big {
     width: 60px;
     height: 60px;
     border-radius: 160px;
