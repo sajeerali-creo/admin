@@ -6,7 +6,14 @@
     --text: #475467;
     --form-border: #D0D5DD;
     --primary-dark: #0297dc;
+
+    --success: #00D685;
+    --info: #0297dc;
+    --warning: #0297dc;
 }
+
+
+
 .text-color{
     color: var(--text);
     font-weight: 300;
@@ -32,4 +39,17 @@
 }
 .light-green{
     background-color: #E0F7F6;
+}
+.text-success{
+    color: var(--success)!important;
+}
+.text-info{
+    color: var(--info)!important;
+}
+
+.today-list{
+    border: 1px solid rgba(0, 214, 133, 0.3)!important;
+}
+.tommorow-list{
+    border: 1px solid rgba(255, 139, 0, 0.3)!important;
 }

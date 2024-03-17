@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -171,40 +172,43 @@
     <!-- =========================================== -->
     <!-- end header -->
 
-    <section class="padding-top padding-bottom">
-        <div class="container-xl d-flex justify-content-between flex-column min-h-section">
-            <div class="text-center mb-5">
-                <h2 class="fs-32">Register as a</h2>
-                <p class="fs-16 text-color">Select the type of account you wish to create for.</p>
-            </div>
-            <div class="d-flex flex-column flex-lg-row gap-4 justify-content-center">
-                <div class="box light-blue d-flex justify-content-center flex-column align-items-center text-center">
-                    <a href="complete-player.html"
-                        class="d-flex justify-content-center flex-column align-items-center text-decoration-none gap-2 w-100 h-100">
-                        <img src="img/player.svg">
-                        <strong class="text-decoration-none text-heading">Player</strong>
-                    </a>
+    <section class="padding-top padding-bottom fit-height d-flex align-items-center">
+        <div class="container-xl d-flex flex-column">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h2 class="fs-32">Complete the Profile</h2>
+                        <p class="fs-16 text-color">Fill out the details below.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3 required">
+                                <label for="exampleInputEmail1" class="form-label control-label">Phone Number</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="+971"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3 required">
+                                <label for="exampleInputEmail1" class="form-label control-label">DOB*</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="DD/MM/YY"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="file-drop-area">
+                                <i class="ri-file-image-line fs-32 text-primary"></i>
+                                <span class="file-message fs-18 font-weight-600">Profile Picture</span>
+                                <input class="file-input" type="file" multiple>
+                                <span class="choose-file-button fs-13">Drag and drop or browse your files</span>
+                                <span class="fs-13 text-color">Only JPEG, PNG files (Less than 1 mb)</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-4">
+                            <a href="palyer-profile.html" class="btn btn-primary w-100">Submit</a>
+                        </div>
+                    </div>
                 </div>
-                <div
-                    class="box light-brown d-flex justify-content-center flex-column align-items-center text-center">
-                    <a href="complete-parent.html"
-                        class="d-flex justify-content-center flex-column align-items-center text-decoration-none gap-2 w-100 h-100">
-                        <img src="img/parent.svg">
-                        <strong class="text-decoration-none text-heading">Parent</strong>
-                    </a>
-                </div>
-                <div
-                    class="box light-green d-flex justify-content-center flex-column align-items-center text-center">
-                    <a href="complete-coach.html"
-                        class="d-flex justify-content-center flex-column align-items-center text-decoration-none gap-2 w-100 h-100">
-                        <img src="img/coach.svg">
-                        <strong class="text-decoration-none text-heading">Coach</strong>
-                    </a>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center mt-5 gap-2 fs-14">
-                If you don’t want to continue now<a href="index.html"
-                    class="text-primary text-decoration-none fs-14">Logout</a>
             </div>
         </div>
     </section>
@@ -219,6 +223,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" />
+    <script>
+        $(document).on('change', '.file-input', function () {
+            var filesCount = $(this)[0].files.length;
+            var textbox = $(this).prev();
+            if (filesCount === 1) {
+                var fileName = $(this).val().split('\\').pop();
+                textbox.text(fileName);
+            } else {
+                textbox.text(filesCount + ' files selected');
+            }
+        });
+    </script>
+
 
 </body>
 

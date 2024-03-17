@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -171,41 +172,119 @@
     <!-- =========================================== -->
     <!-- end header -->
 
-    <section class="padding-top padding-bottom">
-        <div class="container-xl d-flex justify-content-between flex-column min-h-section">
-            <div class="text-center mb-5">
-                <h2 class="fs-32">Register as a</h2>
-                <p class="fs-16 text-color">Select the type of account you wish to create for.</p>
-            </div>
-            <div class="d-flex flex-column flex-lg-row gap-4 justify-content-center">
-                <div class="box light-blue d-flex justify-content-center flex-column align-items-center text-center">
-                    <a href="complete-player.html"
-                        class="d-flex justify-content-center flex-column align-items-center text-decoration-none gap-2 w-100 h-100">
-                        <img src="img/player.svg">
-                        <strong class="text-decoration-none text-heading">Player</strong>
-                    </a>
+    <section class="pt-5 padding-bottom">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="side-bar plain-card p-4">
+                        <div class="text-center d-flex flex-column align-items-center">
+                            <div class="profile-pic mb-3 fs-24">TM</div>
+                            <h3 class="fs-16 text-heading m-0 p-0">Thomas Miller</h3>
+                            <span class="fs-14 text-color">thomas@gmail.com</span>
+                        </div>
+                        <div class="menus padding-bottom mt-5">
+                            <ul>
+                                <li>
+                                    <a href="#" class="active">My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Classes</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Court Booking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Subscription Packages</a>
+                                </li>
+                                <li>
+                                    <a href="#">Account Settings</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-primary w-100"><i class="ri-add-circle-line"></i>&nbsp;Create</a>
+                        </div>
+                    </div>
+
                 </div>
-                <div
-                    class="box light-brown d-flex justify-content-center flex-column align-items-center text-center">
-                    <a href="complete-parent.html"
-                        class="d-flex justify-content-center flex-column align-items-center text-decoration-none gap-2 w-100 h-100">
-                        <img src="img/parent.svg">
-                        <strong class="text-decoration-none text-heading">Parent</strong>
-                    </a>
-                </div>
-                <div
-                    class="box light-green d-flex justify-content-center flex-column align-items-center text-center">
-                    <a href="complete-coach.html"
-                        class="d-flex justify-content-center flex-column align-items-center text-decoration-none gap-2 w-100 h-100">
-                        <img src="img/coach.svg">
-                        <strong class="text-decoration-none text-heading">Coach</strong>
-                    </a>
+                <div class="col-lg-9">
+                    <!-- header -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="text-heading fs-18">Dashboard</h2>
+                        <div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Last Week</option>
+                                <option value="1">Last 30 days</option>
+                                <option value="2">Last 120 days</option>
+                                <option value="3">Last 6 months</option>
+                                <option value="3">1 Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- stats -->
+                    <div class="my-3 text-center overall-stats-box p-4">
+                        <h1 class="text-white fs-42">150</h1>
+                        <span class="text-white fs-13">Total Bookings</span>
+                    </div>
+
+                    <!-- booking -->
+                    <div class="d-flex flex-column gap-2 flex-lg-row">
+                        <div class="p-4 plain-card w-100 text-center">
+                            <h2 class="m-0 p-0 text-success">100</h2>
+                            <span class="text-color">Class Booking</span>
+                        </div>
+                        <div class="p-4 plain-card w-100 text-center">
+                            <h2 class="m-0 p-0 text-info">50</h2>
+                            <span class="text-color">Court Booking </span>
+                        </div>
+                    </div>
+
+                    <!-- today's class -->
+                    <div class="d-flex justify-content-between align-items-center mt-5">
+                        <h2 class="text-heading fs-18">Today’s Class</h2>
+                    </div>
+                    <div class="plain-card p-3 d-flex flex-column flex-lg-row justify-content-between today-list">
+                        <div class="text-color fs-16">Private</div>
+                        <div class="text-color d-flex gap-1 fs-16">
+                            <div class="opacity-50"><i class="ri-timer-2-line"></i></div>
+                            <div>6:00PM</div>
+                        </div>
+                    </div>
+
+                    <!-- today's class -->
+                    <div class="d-flex justify-content-between align-items-center mt-5">
+                        <h2 class="text-heading fs-18">Next Class </h2>
+                    </div>
+                    <div class="plain-card p-3 d-flex flex-column flex-lg-row justify-content-between tommorow-list">
+                        <div class="text-color fs-16">Private</div>
+                        <div class="d-flex flex-column flex-lg-row justify-content-lg-end gap-3 align-items-lg-center">
+                            <div class="d-flex gap-2 align-items-center">
+                                <div class="text-color d-flex gap-1 fs-16">
+                                    <div class="opacity-50"><i class="ri-calendar-2-line"></i></div>
+                                    <div>20 Feb 24</div>
+                                </div>
+                                <div class="text-color d-flex gap-1 fs-16">
+                                    <div class="opacity-50"><i class="ri-timer-2-line"></i></div>
+                                    <div>6:00PM</div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-navy-small text-center">Request for make up</a>
+                        </div>
+                    </div>
+
+                    <!-- Today’s Court Booking -->
+                    <div class="d-flex justify-content-between align-items-center mt-5">
+                        <h2 class="text-heading fs-18">Today’s Court Booking </h2>
+                    </div>
+                    <div class="plain-card p-5 d-flex flex-column justify-content-center text-center">
+                        <i class="ri-inbox-2-line fs-32 text-color opacity-50"></i>
+                        <div class="small text-color">There is no court booking today.</div>
+                    </div>
+
                 </div>
             </div>
-            <div class="d-flex justify-content-center mt-5 gap-2 fs-14">
-                If you don’t want to continue now<a href="index.html"
-                    class="text-primary text-decoration-none fs-14">Logout</a>
-            </div>
+
         </div>
     </section>
 
@@ -219,6 +298,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" />
+    <script>
+        $(document).on('change', '.file-input', function () {
+            var filesCount = $(this)[0].files.length;
+            var textbox = $(this).prev();
+            if (filesCount === 1) {
+                var fileName = $(this).val().split('\\').pop();
+                textbox.text(fileName);
+            } else {
+                textbox.text(filesCount + ' files selected');
+            }
+        });
+    </script>
+
 
 </body>
 

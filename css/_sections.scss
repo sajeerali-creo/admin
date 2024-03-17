@@ -1,22 +1,45 @@
 .padding-top {
     padding-top: 50px;
+
     @media (min-width: 992px) {
-        padding-top: 130px;
+        padding-top: 120px;
     }
 }
+
 .padding-bottom {
     padding-bottom: 50px;
+
     @media (min-width: 992px) {
-        padding-bottom: 130px;
+        padding-bottom: 120px;
     }
 }
+
 .box {
     width: 100%;
     height: auto;
     border-radius: 10px;
     padding: 24px;
+
     @media (min-width: 992px) {
         width: 242px;
         height: 194px;
     }
+}
+
+.min-h-section {
+    min-height: 700px;
+}
+
+.overall-stats-box{
+    background-color: #101B37;
+    border-radius: 10px;
+    background-image: url(../img/bg-stats.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.plain-card{
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    border-radius: 10px;
 }
