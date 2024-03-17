@@ -433,7 +433,7 @@ body {
 }
 
 .padding-top {
-  padding-top: 50px;
+  padding-top: 24px;
 }
 @media (min-width: 992px) {
   .padding-top {
@@ -442,7 +442,7 @@ body {
 }
 
 .padding-bottom {
-  padding-bottom: 50px;
+  padding-bottom: 24px;
 }
 @media (min-width: 992px) {
   .padding-bottom {
