@@ -31,3 +31,41 @@
     font-size: 13px;
     border-radius: 6px;
 }
+.btn-view-all{
+    padding: 6px 16px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--white);
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    &:hover{
+        background-color: var(--primary);
+        color: var(--white);
+    }
+}
+
+.btn-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--white);
+    border: 1px solid #f1f1f1;
+    border-radius: 160px;
+    &:hover{
+        color: var(--text);
+    }
+}
+
+.btn-navey{
+    background-color: #101B37!important;
+    border-color: #101B37!important;
+    &:hover{
+        background-color: #162448!important;
+        border-color: #101B37!important;
+    }
+}
