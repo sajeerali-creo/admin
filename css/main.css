@@ -173,26 +173,6 @@ body {
   font-size: 4px;
 }
 
-.fs-8 {
-  font-size: 8px;
-}
-
-.fs-16 {
-  font-size: 16px;
-}
-
-.fs-24 {
-  font-size: 24px;
-}
-
-.fs-48 {
-  font-size: 48px;
-}
-
-.fs-4 {
-  font-size: 4px;
-}
-
 .fs-5 {
   font-size: 5px;
 }
@@ -371,6 +351,11 @@ body {
 
 .font-weight-600 {
   font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
 }
 
 :root {
