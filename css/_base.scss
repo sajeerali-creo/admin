@@ -11,7 +11,7 @@ body {
 }
 
 .fit-height {
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 160px);
 }
 
 ul {
@@ -67,7 +67,6 @@ a{
 .head-user{
     height: 43px;
     width: 43px;
-    background-color: #000;
     border-radius: 160px;
     overflow: hidden;
     border: 1px solid #f1f1f1;
@@ -77,3 +76,8 @@ a{
         object-fit: cover;
     }
 }
+
+.active-class{
+    border-bottom: 3px solid var(--primary);
+}
+

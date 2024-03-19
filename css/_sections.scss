@@ -43,3 +43,30 @@
     border: 1px solid #F1F1F1;
     border-radius: 10px;
 }
+
+.court{
+    color: var(--heading);
+    background-color: #7EEABB;
+    padding: 24px;
+    border-radius: 10px;
+    text-align: center;
+    a{
+        &:hover{
+            color: var(--heading);
+            opacity: 0.6;
+        }
+    }
+}
+.class{
+    color: var(--heading);
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    a{
+        &:hover{
+            color: var(--heading);
+            opacity: 0.6;
+        }
+    }
+}
