@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   --white: #fff;
   --primary: #00AFFF;
   --black: #000;
-  --heading: #101828;
+  --heading: #101B37;
   --text: #475467;
   --form-border: #D0D5DD;
   --primary-dark: #0297dc;
@@ -886,7 +886,7 @@ label.form-check-label:focus,
   background-color: var(--white);
   border: 1px solid #f1f1f1;
   border-radius: 8px;
-  padding: 16px 0px;
+  padding: 10px 0px;
 }
 @media (min-width: 992px) {
   .time-list ul li {
