@@ -69,3 +69,12 @@
         border-color: #101B37!important;
     }
 }
+.btn-red{
+    background-color: #FF5C5C!important;
+    color: var(--white);
+    border-color: #FF5C5C;
+    &:hover{
+        background-color: #e25353!important;
+        color: var(--white);
+    }
+}

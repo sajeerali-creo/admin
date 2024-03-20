@@ -38,7 +38,8 @@
     background-color: #EEEEEF;
     border-radius: 10px;
 }
-.text-orange{
+
+.text-orange {
     color: var(--orange);
 }
 
@@ -85,5 +86,14 @@
 .hover-text {
     &:hover {
         color: var(--text);
+    }
+}
+
+.table-light {
+    background-color: #E6EEFC;
+
+    th {
+        height: 50px;
+        min-width: 100px;
     }
 }
