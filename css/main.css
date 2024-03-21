@@ -86,6 +86,10 @@ a {
   border-bottom: 3px solid var(--primary);
 }
 
+hr {
+  border-color: #999;
+}
+
 .btn-primary {
   background-color: var(--primary) !important;
   border-color: var(--primary) !important;
@@ -166,6 +170,12 @@ a {
 .btn-red:hover {
   background-color: #e25353 !important;
   color: var(--white);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  border-color: #D0D5DD;
+  color: var(--heading);
 }
 
 .fit-full-image {
@@ -806,6 +816,17 @@ label.form-check-label:focus,
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: var(--primary);
+}
+
+.settings .nav-pills .nav-link {
+  width: auto;
+  background-color: #fff;
+  color: var(--text);
+  border-radius: 0px;
+}
+.settings .nav-pills .nav-link.active, .settings .nav-pills .show > .nav-link {
+  background: none;
+  border-bottom: 3px solid var(--primary);
 }
 
 /*--------- Pager2 ---------*/

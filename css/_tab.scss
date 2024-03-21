@@ -7,3 +7,16 @@
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: var(--primary);
 }
+
+.settings{
+    .nav-pills .nav-link{
+        width: auto;
+        background-color: #fff;
+        color: var(--text);
+        border-radius: 0px;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+        background: none;
+        border-bottom: 3px solid var(--primary);
+    } 
+}

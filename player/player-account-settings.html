@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChampionsHubb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <!-- =========================================== -->
+    <header class="header-autharized d-flex align-items-center">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <div class="d-flex gap-2 align-items-center">
+                <a data-bs-toggle="offcanvas" href="#mobile-menu" class="btn-menu d-lg-none"><i
+                        class="ri-menu-line"></i></a>
+                <div class="logo"><img src="../img/logo-main.svg"></div>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <span class="text-white d-none d-lg-block">thomas@gmail.com</span>
+                <div class="user-head small">AK</div>
+                <div class="notification" data-bs-toggle="offcanvas" href="#notification">
+                    <div class="dot"></div>
+                    <i class="ri-notification-3-line"></i>
+                </div>
+                <!-- <i class="ri-arrow-drop-down-line text-white"></i> -->
+            </div>
+        </div>
+    </header>
+    <!-- notification` -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notification" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Notifications</h5>
+            <a data-bs-dismiss="offcanvas">
+                <i class="ri-close-circle-fill fs-24"></i>
+            </a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-between mb-2">
+                <span class="font-weight-600 fs-14">Today</span>
+                <span class="fs-14">Clear All</span>
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile Menu` -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column gap-2">
+                <div class="user-head-big">
+                    AK
+                </div>
+                <div>
+                    <div class="fs-18">Thomas Miller</div>
+                    <div class="fs-14 text-dim text-decration-none">thomas@gmail.com</div>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="player-profile.html">My Profile</a>
+                    </li>
+                    <li>
+                        <a href="player-class.html">My Class </a>
+                    </li>
+                    <li>
+                        <a href="player-court-booking.html">My Court Booking</a>
+                    </li>
+                    <li>
+                        <a href="player-subscriptions.html">Subscription Packages</a>
+                    </li>
+                    <li>
+                        <a href="player-account-settings.html" class="active">Account Settings</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
+                        class="ri-add-circle-line"></i>&nbsp;Create</a>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+    <!-- end header -->
+
+    <section class="pt-4 pt-lg-5 padding-bottom fit-height">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="side-bar plain-card p-4">
+                        <div class="text-center d-flex flex-column align-items-center">
+                            <div class="profile-pic mb-3 fs-24">TM</div>
+                            <h3 class="fs-16 text-heading m-0 p-0">Thomas Miller</h3>
+                            <span class="fs-14 text-color">thomas@gmail.com</span>
+                        </div>
+                        <div class="menus padding-bottom mt-5">
+                            <ul>
+                                <li>
+                                    <a href="player-profile.html">My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="player-class.html">My Classes</a>
+                                </li>
+                                <li>
+                                    <a href="player-court-booking.html">My Court Booking</a>
+                                </li>
+                                <li>
+                                    <a href="player-subscriptions.html">Subscription Packages</a>
+                                </li>
+                                <li>
+                                    <a href="player-account-settings.html" class="active">Account Settings</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
+                                    class="ri-add-circle-line"></i>&nbsp;Create</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-9">
+                    <div class="plain-card p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h2 class="text-heading fs-18 d-flex align-items-center gap-2">
+                                Settings
+                            </h2>
+                        </div>
+                        <div class="settings">
+                            <ul class="nav nav-pills mb-3 border-bottom" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#details" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">My details</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#password" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Password</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#payment-method" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Payment Method</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="details" role="tabpanel"
+                                    aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="mt-4 w-100 pb-3 border-bottom">
+                                        <h3 class="fs-16 font-weight-600">Personal info</h3>
+                                        <p class="fs-13 text-color">Update your photo and personal details here.</p>
+                                    </div>
+                                    <div class="row pt-3 align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">Name</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-6 mb-2 mb-lg-0">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        placeholder="Thomas" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        placeholder="Millere" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">Email address</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        placeholder="@gmail.com" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <hr>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="fs-14">Your photo</div>
+                                            <p class="fs-13 text-color">This will be displayed on your profile.</p>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="file-drop-area">
+                                                        <i class="ri-file-image-line fs-32 text-primary"></i>
+                                                        <span class="file-message fs-18 font-weight-600">Profile
+                                                            Picture</span>
+                                                        <input class="file-input" type="file" multiple>
+                                                        <span class="choose-file-button fs-13">Drag and drop or browse
+                                                            your files</span>
+                                                        <span class="fs-13 text-color">Only JPEG, PNG files (Less than 1
+                                                            mb)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <hr>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">DOB</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        placeholder="05/10/1990" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <hr>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <a href="#" class="btn btn-secondary">Cancel</a>
+                                        <a href="#" class="btn btn-primary">Submit</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="password" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="mt-4 w-100 pb-3 border-bottom">
+                                        <h3 class="fs-16 font-weight-600">Password Settings</h3>
+                                        <p class="fs-13 text-color">Update your login password details here.</p>
+                                    </div>
+                                    <div class="row pt-3 align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">Current Password</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="position-relative">
+                                                        <input id="password-field" type="password" class="form-control"
+                                                            name="password" value="secret">
+                                                        <span toggle="#password-field"
+                                                            class="field-icon toggle-password">
+                                                            <i class="ri-eye-close-line"></i>
+                                                            <!-- <i class="ri-eye-line"></i> -->
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3 align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">New Password</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="position-relative">
+                                                        <input id="password-field" type="password" class="form-control"
+                                                            name="password" placeholder="Create New Password">
+                                                        <span toggle="#password-field"
+                                                            class="field-icon toggle-password">
+                                                            <i class="ri-eye-close-line"></i>
+                                                            <!-- <i class="ri-eye-line"></i> -->
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3 align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">Confirm New Password</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="position-relative">
+                                                        <input id="password-field" type="password" class="form-control"
+                                                            name="password" placeholder="Confirm New Password">
+                                                        <span toggle="#password-field"
+                                                            class="field-icon toggle-password">
+                                                            <i class="ri-eye-close-line"></i>
+                                                            <!-- <i class="ri-eye-line"></i> -->
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <a href="#" class="btn btn-secondary">Cancel</a>
+                                        <a href="#" class="btn btn-primary">Save</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="payment-method" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab" tabindex="0">
+                                    <div class="mt-4 w-100 pb-3 border-bottom">
+                                        <h3 class="fs-16 font-weight-600">Payment Method Settings</h3>
+                                        <p class="fs-13 text-color">Update your payment method details here.</p>
+                                    </div>
+                                    <div class="row pt-3 align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">Card Holder Name</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="position-relative">
+                                                        <input id="password-field" type="text" class="form-control"
+                                                            name="password" placeholder="Thomas">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3 align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">Card Number</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="position-relative">
+                                                        <input id="password-field" type="text" class="form-control"
+                                                            name="password" placeholder="************1234">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3 align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">Expiry Date</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="position-relative">
+                                                        <input id="password-field" type="text" class="form-control"
+                                                            name="password" placeholder="09 / 2022">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3 align-items-center">
+                                        <div class="col-lg-5 mb-3 mb-lg-0">
+                                            <div class="fs-14">Security Code</div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="position-relative">
+                                                        <input id="password-field" type="text" class="form-control"
+                                                            name="password" placeholder="****">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="d-flex gap-2">
+                                        <a href="#" class="btn btn-secondary">Cancel</a>
+                                        <a href="#" class="btn btn-primary">Save</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal for create button -->
+    <!-- =========================================== -->
+    <div class="modal fade" id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Select Booking Type</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex gap-3">
+                        <div class="w-100 court">
+                            <a href="court-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                                Court
+                            </a>
+                        </div>
+                        <div class="w-100 class">
+                            <a href="class-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                                Classes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+
+    <footer class="py-5">
+        <div class="container-xl text-center text-white fs-13 opacity-75">
+            © Copyright ChampionshipHubb 2023 Design by Creotopi
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" />
+    <script>
+        $(document).on('change', '.file-input', function () {
+            var filesCount = $(this)[0].files.length;
+            var textbox = $(this).prev();
+            if (filesCount === 1) {
+                var fileName = $(this).val().split('\\').pop();
+                textbox.text(fileName);
+            } else {
+                textbox.text(filesCount + ' files selected');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
