@@ -64,6 +64,12 @@ ul {
   color: var(--success);
 }
 
+.no-show {
+  background: rgba(144, 137, 252, 0.1);
+  border: 1px solid rgba(144, 137, 252, 0.3);
+  color: #9089FC;
+}
+
 a {
   text-decoration: none;
 }
