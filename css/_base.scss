@@ -98,3 +98,10 @@ a {
 hr {
     border-color: #999;
 }
+
+
+@for $i from 50 through 250 {
+    .width-#{$i} {
+        width: #{$i}+'px';
+    }
+}
