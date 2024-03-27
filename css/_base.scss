@@ -114,3 +114,9 @@ hr {
         width: #{$i}+'px';
     }
 }
+
+@media (min-width: 992px) {
+    .w-lg-auto{
+        width: auto!important;
+    }
+}

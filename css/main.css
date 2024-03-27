@@ -911,6 +911,11 @@ hr {
   width: 250px;
 }
 
+@media (min-width: 992px) {
+  .w-lg-auto {
+    width: auto !important;
+  }
+}
 .btn-primary {
   background-color: var(--primary) !important;
   border: none;
@@ -1842,6 +1847,10 @@ label.form-check-label:focus,
   background-color: var(--heading);
   border-color: var(--heading);
   color: var(--white);
+}
+
+.pagination {
+  gap: 8px;
 }
 
 .modal-header {
