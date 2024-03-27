@@ -92,7 +92,16 @@ a {
 }
 
 .active-class {
-    border-bottom: 3px solid var(--primary);
+    .plain-card{
+        background-color: var(--heading);
+        color: var(--white);
+        h2{
+            color: var(--white)!important;
+        }
+        span{
+            color: var(--white);
+        }
+    }
 }
 
 hr {

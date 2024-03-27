@@ -92,8 +92,15 @@ a {
      object-fit: cover;
 }
 
-.active-class {
-  border-bottom: 3px solid var(--primary);
+.active-class .plain-card {
+  background-color: var(--heading);
+  color: var(--white);
+}
+.active-class .plain-card h2 {
+  color: var(--white) !important;
+}
+.active-class .plain-card span {
+  color: var(--white);
 }
 
 hr {
@@ -1028,6 +1035,10 @@ hr {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.court-icon {
+  height: 16px;
 }
 
 .header-autharized {
