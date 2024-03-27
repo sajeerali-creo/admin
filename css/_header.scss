@@ -57,6 +57,9 @@
     color: #fff;
     text-decoration: none;
     flex: 0 0 auto;
+    &:hover{
+        color: var(--white);
+    }
 }
 
 .offcanvas-start {

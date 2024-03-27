@@ -3,6 +3,10 @@ body {
   background: linear-gradient(180deg, #f4f4f4 0%, #ffffff 100%);
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .h-100-vh {
   min-height: 100vh;
 }
@@ -276,6 +280,9 @@ hr {
   color: #fff;
   text-decoration: none;
   flex: 0 0 auto;
+}
+.btn-menu:hover {
+  color: var(--white);
 }
 
 .offcanvas-start {
