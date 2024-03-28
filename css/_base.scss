@@ -92,7 +92,16 @@ a {
 }
 
 .active-class {
-    border-bottom: 3px solid var(--primary);
+    .plain-card{
+        background-color: var(--heading);
+        color: var(--white);
+        h2{
+            color: var(--white)!important;
+        }
+        span{
+            color: var(--white);
+        }
+    }
 }
 
 hr {
@@ -103,5 +112,11 @@ hr {
 @for $i from 50 through 250 {
     .width-#{$i} {
         width: #{$i}+'px';
+    }
+}
+
+@media (min-width: 992px) {
+    .w-lg-auto{
+        width: auto!important;
     }
 }
