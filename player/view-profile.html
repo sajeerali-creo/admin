@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChampionsHubb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <!-- =========================================== -->
+    <header class="header-autharized d-flex align-items-center">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <div class="d-flex gap-2 align-items-center">
+                <a data-bs-toggle="offcanvas" href="#mobile-menu" class="btn-menu d-lg-none"><i
+                        class="ri-menu-line"></i></a>
+                <div class="logo"><img src="../img/logo-main.svg"></div>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <span class="text-white d-none d-lg-block">thomas@gmail.com</span>
+                <div class="user-head small">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                </div>
+                <div class="notification" data-bs-toggle="offcanvas" href="#notification">
+                    <div class="dot"></div>
+                    <i class="ri-notification-3-line"></i>
+                </div>
+                <!-- <i class="ri-arrow-drop-down-line text-white"></i> -->
+            </div>
+        </div>
+    </header>
+    <!-- notification` -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notification" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Notifications</h5>
+            <a data-bs-dismiss="offcanvas">
+                <i class="ri-close-circle-fill fs-24"></i>
+            </a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-between mb-2">
+                <span class="font-weight-600 fs-14">Today</span>
+                <span class="fs-14">Clear All</span>
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile Menu` -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column gap-2">
+                <div class="user-head-big">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                </div>
+                <div>
+                    <div class="fs-18">Thomas Miller</div>
+                    <div class="fs-14 text-dim text-decration-none">thomas@gmail.com</div>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="player-dashboard.html" class="active">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="player-class.html">My Class </a>
+                    </li>
+                    <li>
+                        <a href="player-court-booking.html">My Court Booking</a>
+                    </li>
+                    <li>
+                        <a href="player-subscriptions.html">Subscription Packages</a>
+                    </li>
+                    <li>
+                        <a href="player-account-settings.html">Account Settings</a>
+                    </li>
+                    <li>
+                        <a href="../index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
+                        class="ri-add-circle-line"></i>&nbsp;Create</a>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+    <!-- end header -->
+
+    <section class="pt-4 pt-lg-5 padding-bottom fit-height">
+        <div class="container-xl">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- header -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="text-heading fs-18 d-flex align-items-center gap-2">
+                            <a href="player-dashboard.html" class="text-decoration-none text-color btn-back"><i
+                                    class="ri-arrow-left-line"></i></a>
+                            Profile Details
+                        </h2>
+                    </div>
+                    <div class="p-2 px-3 d-flex align-items-center justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Nationality</h3>
+                        <div><svg width="32" height="16" viewBox="0 0 32 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="32" height="16" rx="2" transform="matrix(1 0 0 -1 0 16)"
+                                    fill="url(#pattern0_1730_10838)" />
+                                <defs>
+                                    <pattern id="pattern0_1730_10838" patternContentUnits="objectBoundingBox" width="1"
+                                        height="1">
+                                        <use xlink:href="#image0_1730_10838" transform="scale(0.00138889 0.00277778)" />
+                                    </pattern>
+                                    <image id="image0_1730_10838" width="720" height="360"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtAAAAFoCAIAAADxRFtOAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAC0KADAAQAAAABAAABaAAAAADUtczGAAAWSUlEQVR4Ae3dfY4cVxXG4arqnokDkUCAEBvgH1gAO2K5iHVECIQUydjTXcUtf8SK0rbPO3eu4+l+xiEO43Nc7meulF/6a+Z18kHgg8C2TPP6zTS9+vf9/V///ufvX7yY5pfb+mKanJQPSv6JAAECBFKBJV0wT4AAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFBEcqZp4AAQIECBCIBQRHTGaBAAECBAgQSAUERypmngABAgQIEIgFBEdMZoEAAQIECBBIBQRHKmaeAAECBAgQiAUER0xmgQABAgQIEEgFjumC+esWOE3TMq3zNG1vPuZtmub9xza3z134mD/y+QujPkWAAAECNywgOG74i3/pph/m6TAdtulhWZYfY2Kdtul0vjTefsEHAQIECBD4vIDg+LzRTU0s67T/eH8Px54a2x4Vd0dH5aYOghtLgACBJxbwb5EnBn3uv92618X+v/bsnsM0t/s52t+2bXlY24Mtlz7e5MilX/A5AgQIECDwQUBwfLDwT03g0EJjbaXx7iGVlhvT3J7IMZ+Xy8/h8JiKY0OAAAECFQHBUVG6pZk9OPbbu67rdl639tSN5bydT/P9R4LDk0Zv6XS4rQQIEHi0gOB4NN11Lj5s7ZGU9ryN/da1J40e5qW9QKU9qvLw6uHiDf7xiaUXf9UnCRAgQIDAWwHB4ST8RKC9IrbdlXGcp+PxeH+8e3F/vyzrYf122u5/Muf/ECBAgACBRGB+c/d5smH22gXagyTnbX754vjff/zz5e++ndbjeV6O7eUrPggQIECAwGMF3MPxWLkr3dufknFcDuvdd9/96v73fzj/8Td30zftLTgO0+X34bhSBjeLAAECBJ5YQHA8Mehz/+1eb1N7Cew8vZ4f7pd1W6blsL/XaHsvsPazDwIECBAg8EgBwfFIuGtda+/v1R5mW9vjJ+u2v695e5vz85t3AmtvQeqDAAECBAg8VkBwPFbuSvfaq062ZZvXN2/5dWj3auxv/PX25yu9xW4WAQIECHwJAcHxJZSf0TVOp9Yb+7ubb+fzdD63d+Voz+rYVs/geEZfQ39UAgQIfI0CguNr/Kr8gn+mu/bQSXv7jYelffeU9bC/NKV9oj2Vw0H5Bb8oLk2AAIErEPDvkSv4Ij7lTVjbK2Lffk/6rd2v0b5RSouN/dvVe1XsUyr7vQgQIHB7AoLj9r7mn7zF7Rkca/sxndd5O5zaz8f9hbJLe4Nzr1L5JJxfJECAAIFPCrT/fPVBgAABAgQIEBgrIDjG+vrdCRAgQIAAgSYgOBwDAgQIECBAYLiA4BhO7AIECBAgQICA4HAGCBAgQIAAgeECgmM4sQsQIECAAAECgsMZIECAAAECBIYLCI7hxC5AgAABAgQICA5ngAABAgQIEBguIDiGE7sAAQIECBAgIDicAQIECBAgQGC4gOAYTuwCBAgQIECAgOBwBggQIECAAIHhAoJjOLELECBAgAABAoLDGSBAgAABAgSGCwiO4cQuQIAAAQIECAgOZ4AAAQIECBAYLiA4hhO7AAECBAgQICA4nAECBAgQIEBguIDgGE7sAgQIECBAgIDgcAYIECBAgACB4QKCYzixCxAgQIAAAQKCwxkgQIAAAQIEhgsIjuHELkCAAAECBAgIDmeAAAECBAgQGC4gOIYTuwABAgQIECAgOJwBAgQIECBAYLiA4BhO7AIECBAgQICA4HAGCBAgQIAAgeECgmM4sQsQIECAAAECgsMZIECAAAECBIYLCI7hxC5AgAABAgQICA5ngAABAgQIEBguIDiGE7sAAQIECBAgIDicAQIECBAgQGC4gOAYTuwCBAgQIECAgOBwBggQIECAAIHhAoJjOLELECBAgAABAoLDGSBAgAABAgSGCwiO4cQuQIAAAQIECAgOZ4AAAQIECBAYLiA4hhO7AAECBAgQICA4nAECBAgQIEBguIDgGE7sAgQIECBAgIDgcAYIECBAgACB4QKCYzixCxAgQIAAAQKCwxkgQIAAAQIEhgsIjuHELkCAAAECBAgIDmeAAAECBAgQGC4gOIYTuwABAgQIECAgOJwBAgQIECBAYLiA4BhO7AIECBAgQICA4HAGCBAgQIAAgeECgmM4sQsQIECAAAECgsMZIECAAAECBIYLCI7hxC5AgAABAgQICA5ngAABAgQIEBguIDiGE7sAAQIECBAgIDicAQIECBAgQGC4gOAYTuwCBAgQIECAgOBwBggQIECAAIHhAoJjOLELECBAgAABAoLDGSBAgAABAgSGCwiO4cQuQIAAAQIECAgOZ4AAAQIECBAYLiA4hhO7AAECBAgQICA4nAECBAgQIEBguIDgGE7sAgQIECBAgIDgcAYIECBAgACB4QKCYzixCxAgQIAAAQKCwxkgQIAAAQIEhgsIjuHELkCAAAECBAgIDmeAAAECBAgQGC4gOIYTuwABAgQIECAgOJwBAgQIECBAYLiA4BhO7AIECBAgQICA4HAGCBAgQIAAgeECgmM4sQsQIECAAAECgsMZIECAAAECBIYLCI7hxC5AgAABAgQICA5ngAABAgQIEBguIDiGE7sAAQIECBAgIDicAQIECBAgQGC4gOAYTuwCBAgQIECAgOBwBggQIECAAIHhAoJjOLELECBAgAABAoLDGSBAgAABAgSGCwiO4cQuQIAAAQIECAgOZ4AAAQIECBAYLiA4hhO7AAECBAgQICA4nAECBAgQIEBguIDgGE7sAgQIECBAgIDgcAYIECBAgACB4QKCYzixCxAgQIAAAQKCwxkgQIAAAQIEhgsIjuHELkCAAAECBAgIDmeAAAECBAgQGC4gOIYTuwABAgQIECAgOJwBAgQIECBAYLiA4BhO7AIECBAgQICA4HAGCBAgQIAAgeECgmM4sQsQIECAAAECgsMZIECAAAECBIYLHIdfwQWercA8z9P+134Dtm27eDv2GR8ECBAgQOBzAoLjc0I39uvz8XhYTtPWSuNtbbzrCWFxYwfBzSVAgMATCwiOJwZ97r/deno4z9u8Tdv5PK/rvN+xMa/Tuk2XH3372D0fz93Bn58AAQIEnlZAcDyt57P/3ZbDcZofpnYfx7LMh8P+kMo0LfPy7pGVn90+93z8jMQnCBAgQOCCgOC4gHLTn2p3abx/0ka7k2Na122bT/Np+chzNQTHTZ8WN54AAQJlAcFRprqNwdN6Wtfp8P7Gtp5o927ctR/b5SeHCo73VH4mQIAAgU8JCI5P6dzgrx2X43Rsz9lYpmN7bKU9hWN7mxQfe67Gxz5/g3RuMgECBAh8QkBwfALnFn9pa4+htL9O68sffvjfv/716vRyf0jlcLqbLh8VwXGLp8RtJkCAQC7QXoDgg8AHgfZqlG1aD/P86tv7v/32Tz/8+q7d43HeXrdnjn4Y8k8ECBAgQCAUEBwh2LWPz8txa69RWaf/TNNflm++b69YObd35dCl1/6Fd/sIECAwWODy/eSDL+q3/3oFXq+n9ozRQ3tN7P76lP0VK4flsByX00lzfL1fNX8yAgQIfP0CguPr/xp90T9he+Bkaf/bX52yv515ez7H2t4G7Lz/9EX/HC5GgAABAtclIDiu6+vZfWsOc7uDY3/7jXN7s9H2o30XlWlr/+fQ3gTMBwECBAgQeKyA4His3JXuvXvVyba1uznujnfH9iaj67JOD6fT+UpvsZtFgAABAl9CQHB8CeVndI1lfzvz9iTRuT2Ycmof88O87a9bWfYHWnwQIECAAIFHCgiOR8Jd69rp/HBY2lNF3373lP0bxi7tW6kcJk8avdavuNtFgACBLyPgP1u/jPOzucphWtpjJ+3ujfb3/a1G29uAbev+MlkfBAgQIECgQ0BwdOBZJUCAAAECBGoCgqPmZIoAAQIECBDoEBAcHXhWCRAgQIAAgZqA4Kg5mSJAgAABAgQ6BARHB55VAgQIECBAoCYgOGpOpggQIECAAIEOAcHRgWeVAAECBAgQqAkIjpqTKQIECBAgQKBDQHB04FklQIAAAQIEagKCo+ZkigABAgQIEOgQEBwdeFYJECBAgACBmoDgqDmZIkCAAAECBDoEBEcHnlUCBAgQIECgJiA4ak6mCBAgQIAAgQ4BwdGBZ5UAAQIECBCoCQiOmpMpAgQIECBAoENAcHTgWSVAgAABAgRqAoKj5mSKAAECBAgQ6BAQHB14VgkQIECAAIGagOCoOZkiQIAAAQIEOgQERweeVQIECBAgQKAmIDhqTqYIECBAgACBDgHB0YFnlQABAgQIEKgJCI6akykCBAgQIECgQ0BwdOBZJUCAAAECBGoCgqPmZIoAAQIECBDoEBAcHXhWCRAgQIAAgZqA4Kg5mSJAgAABAgQ6BARHB55VAgQIECBAoCYgOGpOpggQIECAAIEOAcHRgWeVAAECBAgQqAkIjpqTKQIECBAgQKBDQHB04FklQIAAAQIEagKCo+ZkigABAgQIEOgQEBwdeFYJECBAgACBmoDgqDmZIkCAAAECBDoEBEcHnlUCBAgQIECgJiA4ak6mCBAgQIAAgQ4BwdGBZ5UAAQIECBCoCQiOmpMpAgQIECBAoENAcHTgWSVAgAABAgRqAoKj5mSKAAECBAgQ6BAQHB14VgkQIECAAIGagOCoOZkiQIAAAQIEOgQERweeVQIECBAgQKAmIDhqTqYIECBAgACBDgHB0YFnlQABAgQIEKgJCI6akykCBAgQIECgQ0BwdOBZJUCAAAECBGoCgqPmZIoAAQIECBDoEBAcHXhWCRAgQIAAgZqA4Kg5mSJAgAABAgQ6BARHB55VAgQIECBAoCYgOGpOpggQIECAAIEOAcHRgWeVAAECBAgQqAkIjpqTKQIECBAgQKBDQHB04FklQIAAAQIEagKCo+ZkigABAgQIEOgQEBwdeFYJECBAgACBmoDgqDmZIkCAAAECBDoEBEcHnlUCBAgQIECgJiA4ak6mCBAgQIAAgQ4BwdGBZ5UAAQIECBCoCQiOmpMpAgQIECBAoENAcHTgWSVAgAABAgRqAoKj5mSKAAECBAgQ6BAQHB14VgkQIECAAIGagOCoOZkiQIAAAQIEOgQERweeVQIECBAgQKAmIDhqTqYIECBAgACBDgHB0YFnlQABAgQIEKgJCI6akykCBAgQIECgQ0BwdOBZJUCAAAECBGoCgqPmZIoAAQIECBDoEBAcHXhWCRAgQIAAgZqA4Kg5mSJAgAABAgQ6BARHB55VAgQIECBAoCYgOGpOpggQIECAAIEOAcHRgWeVAAECBAgQqAkIjpqTKQIECBAgQKBDQHB04FklQIAAAQIEagKCo+ZkigABAgQIEOgQEBwdeFYJECBAgACBmoDgqDmZIkCAAAECBDoEBEcHnlUCBAgQIECgJiA4ak6mCBAgQIAAgQ4BwdGBZ5UAAQIECBCoCQiOmpMpAgQIECBAoENAcHTgWSVAgAABAgRqAoKj5mSKAAECBAgQ6BAQHB14VgkQIECAAIGagOCoOZkiQIAAAQIEOgQERweeVQIECBAgQKAmIDhqTqYIECBAgACBDgHB0YFnlQABAgQIEKgJCI6akykCBAgQIECgQ0BwdOBZJUCAAAECBGoCgqPmZIoAAQIECBDoEBAcHXhWCRAgQIAAgZqA4Kg5mSJAgAABAgQ6BARHB55VAgQIECBAoCYgOGpOpggQIECAAIEOAcHRgWeVAAECBAgQqAkIjpqTKQIECBAgQKBDQHB04FklQIAAAQIEagKCo+ZkigABAgQIEOgQEBwdeFYJECBAgACBmoDgqDmZIkCAAAECBDoEBEcHnlUCBAgQIECgJiA4ak6mCBAgQIAAgQ4BwdGBZ5UAAQIECBCoCfwfu8tWHSJlceUAAAAASUVORK5CYII=" />
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex align-items-center justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Age</h3>
+                        <div>
+                            36
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex align-items-center justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Gender</h3>
+                        <div>
+                            Male
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex align-items-center justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Height</h3>
+                        <div>
+                            5’6’
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex align-items-center justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Weight</h3>
+                        <div>
+                            140Ibs
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex align-items-center justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Hand Preference</h3>
+                        <div>
+                            Right Handed
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex align-items-center justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Experienced</h3>
+                        <div>
+                            ITF Junior
+                        </div>
+                    </div>
+
+                    <div class="p-2 px-3 d-flex align-items-center justify-content-between mb-2">
+                        <div class="fs-16 font-weight-600">Performance checklist </div>
+                        <div class="progress-v2">
+                            <div class="progress" data-percentage="70">
+                                <span class="progress-left">
+                                    <span class="progress-bar very-good"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar very-good"></span>
+                                </span>
+                                <div class="progress-value">
+                                    <div>
+                                        70%<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="progress-v2">
+                                    <div class="progress-v2">
+                                        <div class="progress" data-percentage="60">
+                                            <span class="progress-left">
+                                                <span class="progress-bar very-good"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar very-good"></span>
+                                            </span>
+                                            <div class="progress-value">
+                                                <div>
+                                                    60%<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <h3 class="fs-14 tag-bg">Physical</h3>
+                                    </div>
+                                    <p class="fs-14 opacity-50">My physical fitness is crucial for moving swiftly on the
+                                        court, enduring long matches, and hitting powerful shots while preventing
+                                        injuries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="progress-v2">
+                                    <div class="progress" data-percentage="20">
+                                        <span class="progress-left">
+                                            <span class="progress-bar poor"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar poor"></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                20%<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <h3 class="fs-14 tag-bg">Technical</h3>
+                                    </div>
+                                    <p class="fs-14 opacity-50">Developing a strategic mindset allows me to plan my
+                                        game, adjust strategies on the fly, and make smart decisions during pivotal
+                                        moments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="progress-v2">
+                                    <div class="progress" data-percentage="50">
+                                        <span class="progress-left">
+                                            <span class="progress-bar good"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar good"></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                50%<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <h3 class="fs-14 tag-bg">Tactical</h3>
+                                    </div>
+                                    <p class="fs-14 opacity-50">Understanding my opponent's strengths and weaknesses
+                                        helps me create effective tactics to outsmart them and take control of the
+                                        match.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="progress-v2">
+                                    <div class="progress" data-percentage="60">
+                                        <span class="progress-left">
+                                            <span class="progress-bar very-good"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar very-good"></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                60%<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <h3 class="fs-14 tag-bg">Strategic</h3>
+                                    </div>
+                                    <p class="fs-14 opacity-50">Having strong technical skills, like a reliable serve
+                                        and accurate shots, is essential for consistency and control over the game.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="progress-v2">
+                                    <div class="progress" data-percentage="90">
+                                        <span class="progress-left">
+                                            <span class="progress-bar exelent"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar exelent"></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                90%<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <h3 class="fs-14 tag-bg">Mental</h3>
+                                    </div>
+                                    <p class="fs-14 opacity-50"> Mental toughness is key for staying composed under pressure, maintaining focus, and rebounding from setbacks with confidence</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="progress-v2">
+                                    <div class="progress" data-percentage="50">
+                                        <span class="progress-left">
+                                            <span class="progress-bar good"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar good"></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                50%<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <h3 class="fs-14 tag-bg">Environment</h3>
+                                    </div>
+                                    <p class="fs-14 opacity-50">Being aware of the playing environment, from surface to weather conditions, helps me adapt my game and maximize my performance on the court.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="progress-v2">
+                                    <div class="progress" data-percentage="70">
+                                        <span class="progress-left">
+                                            <span class="progress-bar very-good"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar very-good"></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <div>
+                                                70%<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex mb-2">
+                                        <h3 class="fs-14">Overall (Very good)</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- modal for create button -->
+    <!-- =========================================== -->
+    <div class="modal fade" id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Select Booking Type</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex gap-3">
+                        <div class="w-100 court">
+                            <a href="court-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                                Court
+                            </a>
+                        </div>
+                        <div class="w-100 class">
+                            <a href="class-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                                Classes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+
+    <footer class="py-5">
+        <div class="container-xl text-center text-white fs-13 opacity-75">
+            © Copyright ChampionshipHubb 2023 Design by Creotopi
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" />
+
+    <script>
+        $(document).on('change', '.file-input', function () {
+            var filesCount = $(this)[0].files.length;
+            var textbox = $(this).prev();
+            if (filesCount === 1) {
+                var fileName = $(this).val().split('\\').pop();
+                textbox.text(fileName);
+            } else {
+                textbox.text(filesCount + ' files selected');
+            }
+        });
+        $(document).ready(function () {
+            $('.progressWrapper progress').each(function () {
+                var prgsVal = $(this).data('value');
+                var maxN = $(this).attr('max');
+                var pop = prgsVal / maxN * 100
+
+                $(this).prev().css('left', pop + '%').text(prgsVal);
+                $(this).val(prgsVal);
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

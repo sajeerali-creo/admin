@@ -35,6 +35,12 @@ ul {
   }
 }
 
+.scroll-all {
+  overflow: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
 .status {
   display: flex;
   border-radius: 35px;
@@ -916,6 +922,14 @@ hr {
     width: auto !important;
   }
 }
+.radius-35 {
+  border-radius: 35px;
+}
+
+.progress {
+  height: 10px;
+}
+
 .btn-primary {
   background-color: var(--primary) !important;
   border: none;
@@ -1364,18 +1378,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 :root {
   --white: #fff;
-  --primary: #00AFFF;
+  --primary: #00afff;
   --black: #000;
-  --heading: #101B37;
+  --heading: #101b37;
   --text: #475467;
-  --form-border: #D0D5DD;
+  --form-border: #d0d5dd;
   --primary-dark: #0297dc;
-  --success: #00D685;
+  --success: #00d685;
   --info: #0297dc;
-  --danger: #FF5C5C;
+  --danger: #ff5c5c;
   --warning: #0297dc;
-  --orange: #FED319;
-  --purple: #9089FC;
+  --orange: #fed319;
+  --purple: #9089fc;
 }
 
 .text-color {
@@ -1396,7 +1410,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .bg-gray {
-  background-color: #EEEEEF;
+  background-color: #eeeeef;
   border-radius: 10px;
 }
 
@@ -1405,15 +1419,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .light-blue {
-  background-color: #D6ECFA;
+  background-color: #d6ecfa;
 }
 
 .light-brown {
-  background-color: #F0E5DE;
+  background-color: #f0e5de;
 }
 
 .light-green {
-  background-color: #E0F7F6;
+  background-color: #e0f7f6;
 }
 
 .text-success {
@@ -1449,7 +1463,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .table-light {
-  background-color: #E6EEFC;
+  background-color: #e6eefc;
 }
 .table-light th {
   height: 50px;
@@ -1461,11 +1475,104 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .color {
-  background-color: #4D73E0;
+  background-color: #4d73e0;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--white);
+}
+
+.card .percent {
+  position: relative;
+}
+
+.card svg {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  transform: rotate(-90deg);
+}
+
+.card svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.card svg circle:last-of-type {
+  stroke-dasharray: 625px;
+  stroke-dashoffset: calc(625px - 625px * var(--percent) / 100);
+  stroke: #3498db;
+}
+
+.card .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card .number h3 {
+  font-weight: 200;
+  font-size: 3.5rem;
+}
+
+.card .number h3 span {
+  font-size: 2rem;
+}
+
+.card .title h2 {
+  margin: 25px 0 0;
+}
+
+.card:nth-child(1) svg circle:last-of-type {
+  stroke: #f39c12;
+}
+
+.card:nth-child(2) svg circle:last-of-type {
+  stroke: #2ecc71;
+}
+
+.poor {
+  border-color: #ff5c5c !important;
+}
+
+.very-good {
+  border-color: #f0daa1 !important;
+}
+
+.very-good-fill {
+  background-color: #f0daa1 !important;
+}
+
+.good {
+  border-color: #A1CAF0 !important;
+}
+
+.good-fill {
+  background-color: #A1CAF0 !important;
+}
+
+.exelent {
+  border-color: #7EEABB !important;
+}
+
+.excellent-fill {
+  background-color: #7EEABB !important;
+}
+
+.average-fill {
+  background-color: #BFA1F0 !important;
+}
+
+.tag-bg {
+  border-radius: 35px;
+  background: rgba(0, 175, 255, 0.13);
+  padding: 4px 8px;
+  display: flex;
 }
 
 .padding-top {
@@ -1539,6 +1646,189 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .class a:hover {
   color: var(--heading);
   opacity: 0.6;
+}
+
+.progress-v2 {
+  /* This for loop creates the 	necessary css animation names 
+    Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+    */
+}
+.progress-v2 .progress {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+}
+.progress-v2 .progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 7px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress-v2 .progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress-v2 .progress .progress-left {
+  left: 0;
+}
+.progress-v2 .progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 7px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  border-color: #ffb43e;
+}
+.progress-v2 .progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-left: 0;
+  transform-origin: center left;
+}
+.progress-v2 .progress .progress-right {
+  right: 0;
+}
+.progress-v2 .progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-right: 0;
+  transform-origin: center right;
+}
+.progress-v2 .progress .progress-value {
+  display: flex;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+}
+.progress-v2 .progress .progress-value span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.progress-v2 .progress[data-percentage="10"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="10"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress-v2 .progress[data-percentage="20"] .progress-right .progress-bar {
+  animation: loading-2 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="20"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress-v2 .progress[data-percentage="30"] .progress-right .progress-bar {
+  animation: loading-3 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="30"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress-v2 .progress[data-percentage="40"] .progress-right .progress-bar {
+  animation: loading-4 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="40"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress-v2 .progress[data-percentage="50"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="50"] .progress-left .progress-bar {
+  animation: 0;
+}
+.progress-v2 .progress[data-percentage="60"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="60"] .progress-left .progress-bar {
+  animation: loading-1 1.5s linear forwards 1.5s;
+}
+.progress-v2 .progress[data-percentage="70"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="70"] .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.5s;
+}
+.progress-v2 .progress[data-percentage="80"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="80"] .progress-left .progress-bar {
+  animation: loading-3 1.5s linear forwards 1.5s;
+}
+.progress-v2 .progress[data-percentage="90"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="90"] .progress-left .progress-bar {
+  animation: loading-4 1.5s linear forwards 1.5s;
+}
+.progress-v2 .progress[data-percentage="100"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress-v2 .progress[data-percentage="100"] .progress-left .progress-bar {
+  animation: loading-5 1.5s linear forwards 1.5s;
+}
+@keyframes loading-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(72deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(108deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.progress-v2 .progress {
+  margin-bottom: 1em;
 }
 
 .form-label {
@@ -1701,6 +1991,46 @@ label.form-check-label:focus,
 }
 .menus ul li .active {
   background-color: var(--heading);
+  color: var(--white);
+}
+
+.tab-manin-prof {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.tab-manin-prof a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  font-size: 16px;
+  background-color: var(--white);
+  border-radius: 35px;
+  border: 1px solid #f1f1f1;
+  color: var(--text);
+}
+.tab-manin-prof .active {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.sub-manin-prof {
+  margin-bottom: 24px;
+}
+.sub-manin-prof a {
+  width: 100%;
+  background-color: var(--white);
+  padding: 16px 18px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  border-radius: 35px;
+  border: 1px solid #f1f1f1;
+}
+.sub-manin-prof .active {
+  background-color: #000000;
   color: var(--white);
 }
 

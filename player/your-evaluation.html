@@ -25,7 +25,8 @@
             <div class="d-flex gap-2 align-items-center">
                 <span class="text-white d-none d-lg-block">thomas@gmail.com</span>
                 <div class="user-head small">
-                    <img src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
                 </div>
                 <div class="notification" data-bs-toggle="offcanvas" href="#notification">
                     <div class="dot"></div>
@@ -137,7 +138,8 @@
         <div class="offcanvas-body d-flex flex-column justify-content-between">
             <div class="d-flex flex-column gap-2">
                 <div class="user-head-big">
-                    <img src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
                 </div>
                 <div>
                     <div class="fs-18">Thomas Miller</div>
@@ -168,7 +170,7 @@
             </div>
             <div>
                 <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
-                    class="ri-add-circle-line"></i>&nbsp;Create</a>
+                        class="ri-add-circle-line"></i>&nbsp;Create</a>
             </div>
         </div>
     </div>
@@ -178,129 +180,171 @@
     <section class="pt-4 pt-lg-5 padding-bottom fit-height">
         <div class="container-xl">
             <div class="row">
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="side-bar plain-card p-4">
+
+                <div class="col-lg-12">
+                    <!-- header -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="text-heading fs-18 d-flex align-items-center gap-2">
+                            <a href="player-dashboard.html" class="text-decoration-none text-color btn-back"><i
+                                    class="ri-arrow-left-line"></i></a>
+                            Profile Details
+                        </h2>
+                    </div>
+                    <div class="d-flex justify-content-center side-bar">
                         <div class="text-center d-flex flex-column align-items-center">
                             <div class="profile-pic mb-3 fs-24">
                                 <img
                                     src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
                             </div>
                             <h3 class="fs-16 text-heading m-0 p-0">Thomas Miller</h3>
-                            <span class="fs-14 text-color">thomas@gmail.com</span>
-                            <a href="profile-details.html" class="btn-view-all mt-3">View Profile</a>
+                            <span class="fs-14 text-color">Advanced</span>
+                            <a href="view-profile.html" class="btn-view-all mt-3">View Profile</a>
+
                         </div>
-                        <div class="menus padding-bottom mt-5">
-                            <ul>
-                                <li>
-                                    <a href="player-dashboard.html" class="active">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="player-class.html">My Classes</a>
-                                </li>
-                                <li>
-                                    <a href="player-court-booking.html">My Court Booking</a>
-                                </li>
-                                <li>
-                                    <a href="player-subscriptions.html">Subscription Packages</a>
-                                </li>
-                                <li>
-                                    <a href="player-account-settings.html">Account Settings</a>
-                                </li>
-                                <li>
-                                    <a href="../index.html">Logout</a>
-                                </li>
-                            </ul>
-                        </div>
+                    </div>
+
+                    <div class="d-flex tab-manin-prof gap-2 scroll-all">
+                        <a href="profile-details.html" class="w-100">Your Assessment</a>
+                        <a href="your-evaluation.html" class="w-100 active">Your Evaluation</a>
+                        <a href="badges-earned.html" class="w-100">Badges earned</a>
+                    </div>
+
+                    <div class="d-flex sub-manin-prof gap-2 scroll-all">
+                        <a href="#" class="active">Physical</a>
+                        <a href="#">Technical</a>
+                        <a href="#">Tactical</a>
+                        <a href="#">Strategic</a>
+                        <a href="#">Mental</a>
+                        <a href="#">Environmental</a>
+                    </div>
+
+
+                    <div
+                        class="py-2 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between mb-2 border-bottom">
+                        <h3 class="fs-14">Checkpoints</h3>
                         <div>
-                            <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
-                                class="ri-add-circle-line"></i>&nbsp;Create</a>
+                            <a href="#">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 14C3.134 14 0 10.866 0 7C0 3.134 3.134 0 7 0C10.866 0 14 3.134 14 7C14 10.866 10.866 14 7 14ZM6.3 9.1V10.5H7.7V9.1H6.3ZM7.7 7.94857C8.71199 7.64736 9.45 6.70985 9.45 5.6C9.45 4.2469 8.3531 3.15 7 3.15C5.8114 3.15 4.82046 3.99643 4.59712 5.11942L5.97016 5.39404C6.06592 4.91276 6.49061 4.55 7 4.55C7.57988 4.55 8.05 5.0201 8.05 5.6C8.05 6.17988 7.57988 6.65 7 6.65C6.61339 6.65 6.3 6.96339 6.3 7.35V8.4H7.7V7.94857Z"
+                                        fill="#00AFFF" />
+                                </svg>
+
+                            </a>
                         </div>
                     </div>
 
-                </div>
-                <div class="col-lg-9">
-                    <!-- header -->
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h2 class="text-heading fs-18 d-flex align-items-center gap-2">
-                            <a href="player-dashboard.html" class="text-decoration-none text-color btn-back"><i
-                                    class="ri-arrow-left-line"></i></a>
-                            Class Details
-                        </h2>
-                    </div>
-
-                    <!-- details -->
-                    <div class="plain-card">
-                        <div class="border-bottom p-4 d-flex justify-content-between">
-                            <div>
-                                <span class="status class-left">Class Left</span>
+                    <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Motor Skills (80%)</div>
+                                <div>Very Good</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar very-good-fill" role="progressbar" aria-label="Basic example"
+                                    style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                        <div class="p-4">
-                            <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Class Type</div>
-                                    <div class="fs-16 font-weight-600 text-heading">Private</div>
-                                </div>
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Time</div>
-                                    <div class="fs-16 font-weight-600 text-heading">06:00</div>
-                                </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Conditioning (65%)</div>
+                                <div>Good</div>
                             </div>
+                            <div class="progress">
+                                <div class="progress-bar good-fill" role="progressbar" aria-label="Basic example"
+                                    style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Speed, Agility & Quickness (70%) </div>
+                                <div>Good</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar good-fill" role="progressbar" aria-label="Basic example"
+                                    style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Strength (40%)</div>
+                                <div>Average</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar average-fill" role="progressbar" aria-label="Basic example"
+                                    style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Nutrition (40%)</div>
+                                <div>Average</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar average-fill" role="progressbar" aria-label="Basic example"
+                                    style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Flexibility (92%)</div>
+                                <div>Excellent</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar excellent-fill" role="progressbar" aria-label="Basic example"
+                                    style="width: 98%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Medical (82%)</div>
+                                <div>Very Good</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar very-good-fill" role="progressbar" aria-label="Basic example"
+                                    style="width: 82%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
 
-                            <!-- <div class="d-flex flex-column flex-lg-row gap-3">
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Court No.</div>
-                                    <div class="fs-16 font-weight-600 text-heading">2</div>
-                                </div>
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between today-list">
-                                    <div class="fs-16 text-color">Date</div>
-                                    <div class="fs-16 font-weight-600 text-success">Today</div>
-                                </div>
-                            </div> -->
 
-                            <!-- ==============other cases like tommorow and spesifi date================ -->
-                            <div class="d-flex gap-3">
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Court No.</div>
-                                    <div class="fs-16 font-weight-600 text-heading">2</div>
-                                </div>
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Date</div>
-                                    <div class="text-color d-flex gap-1 fs-16">
-                                        <div class="opacity-50"><i class="ri-calendar-2-line"></i></div>
-                                        <div class="font-weight-600">20 Feb 24</div>
+                    <div
+                        class="py-2 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between mb-2 border-bottom">
+                        <h3 class="fs-14">Checkpoints</h3>
+                    </div>
+
+                    <div class="d-flex mt-4">
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="progress-v2">
+                                <div class="progress" data-percentage="70">
+                                    <span class="progress-left">
+                                        <span class="progress-bar very-good"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar very-good"></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>
+                                            70%<br>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
-
-                        </div>
-                        <div class="p-4">
-                            <div class="mb-2">Coach</div>
-                            <div class="d-flex gap-2">
-                                <div class="head-user">
-                                    <img
-                                        src="https://img.freepik.com/premium-photo/beauty-portrait-brown-haired-woman-close-up-beautiful-hairstyle-natural-makeup-perfect-hair-dark-hair-girl-head-illustration_86390-6998.jpg">
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <div class="text-heading fs-14 font-weight-600">Arnel Berdan</div>
-                                    <div class="fs-13 text-color">ITF/USPTA Certified</div>
+                            <div>
+                                <div class="d-flex mb-2">
+                                    <h3 class="fs-14">Overall (Very good)</h3>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- footer -->
-                        <div class="p-4 d-flex border-top">
-                            <a href="rescedule-confirmation.html" class="btn btn-primary btn-navey text-center">Reschedule&nbsp;<i
-                                    class="ri-arrow-right-circle-line"></i></a>
-                        </div>
                     </div>
+
                 </div>
+
             </div>
-        </div>
     </section>
 
-     <!-- modal for create button -->
+    <!-- modal for create button -->
     <!-- =========================================== -->
     <div class="modal fade" id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -312,12 +356,14 @@
                 <div class="modal-body">
                     <div class="d-flex gap-3">
                         <div class="w-100 court">
-                            <a href="court-booking.html" class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                            <a href="court-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
                                 Court
                             </a>
                         </div>
                         <div class="w-100 class">
-                            <a href="class-booking.html" class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                            <a href="class-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
                                 Classes
                             </a>
                         </div>
@@ -339,6 +385,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" />
+
     <script>
         $(document).on('change', '.file-input', function () {
             var filesCount = $(this)[0].files.length;
@@ -349,6 +396,16 @@
             } else {
                 textbox.text(filesCount + ' files selected');
             }
+        });
+        $(document).ready(function () {
+            $('.progressWrapper progress').each(function () {
+                var prgsVal = $(this).data('value');
+                var maxN = $(this).attr('max');
+                var pop = prgsVal / maxN * 100
+
+                $(this).prev().css('left', pop + '%').text(prgsVal);
+                $(this).val(prgsVal);
+            });
         });
     </script>
 

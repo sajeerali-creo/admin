@@ -25,7 +25,8 @@
             <div class="d-flex gap-2 align-items-center">
                 <span class="text-white d-none d-lg-block">thomas@gmail.com</span>
                 <div class="user-head small">
-                    <img src="https://www.worldphoto.org/sites/default/files/default-media/Piercy.jpg">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
                 </div>
                 <div class="notification" data-bs-toggle="offcanvas" href="#notification">
                     <div class="dot"></div>
@@ -134,14 +135,15 @@
     </div>
     <!-- mobile Menu` -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-body d-flex flex-column">
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
             <div class="d-flex flex-column gap-2">
                 <div class="user-head-big">
-                    <img src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
                 </div>
                 <div>
                     <div class="fs-18">Thomas Miller</div>
-                    <div class="fs-14 text-dim">thomas@gmail.com</div>
+                    <div class="fs-14 text-dim text-decration-none">thomas@gmail.com</div>
                 </div>
             </div>
             <div>
@@ -162,77 +164,139 @@
                         <a href="player-account-settings.html">Account Settings</a>
                     </li>
                     <li>
-                        <a href="index.html">Logout</a>
+                        <a href="../index.html">Logout</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <a href="#" class="btn btn-primary w-100"><i class="ri-add-circle-line"></i>&nbsp;Create</a>
+                <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
+                        class="ri-add-circle-line"></i>&nbsp;Create</a>
             </div>
         </div>
     </div>
     <!-- =========================================== -->
     <!-- end header -->
 
-    <section class="padding-top padding-bottom fit-height d-flex align-items-center">
-        <div class="container-xl d-flex flex-column">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="text-center mb-5">
-                        <h2 class="fs-32">Complete the Profile</h2>
-                        <p class="fs-16 text-color">Fill out the details below.</p>
+    <section class="pt-4 pt-lg-5 padding-bottom fit-height">
+        <div class="container-xl">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- header -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="text-heading fs-18 d-flex align-items-center gap-2">
+                            <a href="player-dashboard.html" class="text-decoration-none text-color btn-back"><i
+                                    class="ri-arrow-left-line"></i></a>
+                            Profile Details
+                        </h2>
                     </div>
-                    <div class="row">
+                    <div class="d-flex justify-content-center side-bar">
+                        <div class="text-center d-flex flex-column align-items-center">
+                            <div class="profile-pic mb-3 fs-24">
+                                <img
+                                    src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                            </div>
+                            <h3 class="fs-16 text-heading m-0 p-0">Thomas Miller</h3>
+                            <span class="fs-14 text-color">Advanced</span>
+                            <a href="view-profile.html" class="btn-view-all mt-3">View Profile</a>
 
-                        <div class="col-lg-6 mb-3">
-                            <label for="exampleInputEmail1" class="form-label control-label">Years of Experience</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter"
-                                aria-describedby="emailHelp">
                         </div>
-                        <div class="col-lg-6">
-                            <div class="mb-3 required">
-                                <label for="exampleInputEmail1" class="form-label control-label">Phone Number</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="+971"
-                                    aria-describedby="emailHelp">
-                            </div>
-                        </div>
-                        <div class="col-lg-12 mb-3">
-                            <label class="w-100 mb-3 fs-14">Certification</label>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">ITF</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2">USPTA</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                <label class="form-check-label" for="inlineCheckbox3">USPTR</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option4">
-                                <label class="form-check-label" for="inlineCheckbox4">ATP</label>
-                            </div>
-                        </div>
+                    </div>
 
-                        <div class="col-md-12">
-                            <div class="file-drop-area">
-                                <i class="ri-file-image-line fs-32 text-primary"></i>
-                                <span class="file-message fs-18 font-weight-600">Profile Picture</span>
-                                <input class="file-input" type="file" multiple>
-                                <span class="choose-file-button fs-13">Drag and drop or browse your files</span>
-                                <span class="fs-13 text-color">Only JPEG, PNG files (Less than 1 mb)</span>
-                            </div>
+                    <div class="d-flex tab-manin-prof gap-2 scroll-all">
+                        <a href="profile-details.html" class="w-100 active">Your Assessment</a>
+                        <a href="your-evaluation.html" class="w-100">Your Evaluation</a>
+                        <a href="badges-earned.html" class="w-100">Badges earned</a>
+                    </div>
+
+
+                    <div class="p-2 px-3 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Are you planning on taking classes?</h3>
+                        <div>
+                            Yes
                         </div>
-                        <div class="col-lg-12 mt-4">
-                            <a href="coach-profile.html" class="btn btn-primary w-100">Submit</a>
+                    </div>
+                    <div class="p-2 px-3 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Have you ever been taken a classes before?</h3>
+                        <div>
+                            Yes
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">You have been playing for</h3>
+                        <div>
+                            1 -2 years
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Your playing level is </h3>
+                        <div>
+                            Intermediate
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Racquet you currently use is</h3>
+                        <div>
+                            Wilson, BLX, 300g
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Your current type of grip is</h3>
+                        <div>
+                            Power,
+                            control,
+                            consistency,
+                            movement
+                            & footwork
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">Your style of play is</h3>
+                        <div>
+                            Aggressive Baseliner 
+                        </div>
+                    </div>
+                    <div class="p-2 px-3 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between bg-white radius-35 mb-2">
+                        <h3 class="fs-14">You have past medical record</h3>
+                        <div>
+                            Asthma
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+    </section>
+
+    <!-- modal for create button -->
+    <!-- =========================================== -->
+    <div class="modal fade" id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Select Booking Type</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex gap-3">
+                        <div class="w-100 court">
+                            <a href="court-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                                Court
+                            </a>
+                        </div>
+                        <div class="w-100 class">
+                            <a href="class-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                                Classes
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- =========================================== -->
 
     <footer class="py-5">
         <div class="container-xl text-center text-white fs-13 opacity-75">
@@ -245,6 +309,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" />
+
     <script>
         $(document).on('change', '.file-input', function () {
             var filesCount = $(this)[0].files.length;
@@ -255,6 +320,16 @@
             } else {
                 textbox.text(filesCount + ' files selected');
             }
+        });
+        $(document).ready(function () {
+            $('.progressWrapper progress').each(function () {
+                var prgsVal = $(this).data('value');
+                var maxN = $(this).attr('max');
+                var pop = prgsVal / maxN * 100
+
+                $(this).prev().css('left', pop + '%').text(prgsVal);
+                $(this).val(prgsVal);
+            });
         });
     </script>
 

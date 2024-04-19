@@ -1,21 +1,19 @@
 :root {
     --white: #fff;
-    --primary: #00AFFF;
+    --primary: #00afff;
     --black: #000;
-    --heading: #101B37;
+    --heading: #101b37;
     --text: #475467;
-    --form-border: #D0D5DD;
+    --form-border: #d0d5dd;
     --primary-dark: #0297dc;
 
-    --success: #00D685;
+    --success: #00d685;
     --info: #0297dc;
-    --danger: #FF5C5C;
+    --danger: #ff5c5c;
     --warning: #0297dc;
-    --orange: #FED319;
-    --purple: #9089FC;
+    --orange: #fed319;
+    --purple: #9089fc;
 }
-
-
 
 .text-color {
     color: var(--text);
@@ -35,7 +33,7 @@
 }
 
 .bg-gray {
-    background-color: #EEEEEF;
+    background-color: #eeeeef;
     border-radius: 10px;
 }
 
@@ -44,15 +42,15 @@
 }
 
 .light-blue {
-    background-color: #D6ECFA;
+    background-color: #d6ecfa;
 }
 
 .light-brown {
-    background-color: #F0E5DE;
+    background-color: #f0e5de;
 }
 
 .light-green {
-    background-color: #E0F7F6;
+    background-color: #e0f7f6;
 }
 
 .text-success {
@@ -90,21 +88,106 @@
 }
 
 .table-light {
-    background-color: #E6EEFC;
+    background-color: #e6eefc;
 
     th {
         height: 50px;
         min-width: 100px;
     }
 }
-.bg-success{
-    background-color: var(--success)!important;
+.bg-success {
+    background-color: var(--success) !important;
 }
 
-.color{
-    background-color: #4D73E0;
+.color {
+    background-color: #4d73e0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--white);
+}
+
+.card .percent {
+    position: relative;
+}
+
+.card svg {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    transform: rotate(-90deg);
+}
+
+.card svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.card svg circle:last-of-type {
+    stroke-dasharray: 625px;
+    stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+    stroke: #3498db;
+}
+
+.card .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .number h3 {
+    font-weight: 200;
+    font-size: 3.5rem;
+}
+
+.card .number h3 span {
+    font-size: 2rem;
+}
+
+.card .title h2 {
+    margin: 25px 0 0;
+}
+
+.card:nth-child(1) svg circle:last-of-type {
+    stroke: #f39c12;
+}
+
+.card:nth-child(2) svg circle:last-of-type {
+    stroke: #2ecc71;
+}
+.poor {
+    border-color: #ff5c5c !important;
+}
+.very-good {
+    border-color: #f0daa1 !important;
+}
+.very-good-fill{
+    background-color: #f0daa1 !important;
+}
+.good {
+    border-color: #A1CAF0 !important;
+}
+.good-fill {
+    background-color: #A1CAF0 !important;
+}
+.exelent {
+    border-color: #7EEABB !important;
+}
+.excellent-fill{
+    background-color: #7EEABB !important;
+}
+.average-fill{
+    background-color: #BFA1F0 !important;
+}
+
+.tag-bg {
+    border-radius: 35px;
+    background: rgba(0, 175, 255, 0.13);
+    padding: 4px 8px;
+    display: flex;
 }
