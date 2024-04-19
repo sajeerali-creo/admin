@@ -100,3 +100,11 @@
 .bg-success{
     background-color: var(--success)!important;
 }
+
+.color{
+    background-color: #4D73E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}

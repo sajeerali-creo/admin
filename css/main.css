@@ -1460,6 +1460,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
   background-color: var(--success) !important;
 }
 
+.color {
+  background-color: #4D73E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
 .padding-top {
   padding-top: 24px;
 }
