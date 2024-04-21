@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChampionsHubb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <!-- =========================================== -->
+    <header class="header-autharized d-flex align-items-center">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <div class="d-flex gap-2 align-items-center">
+                <a data-bs-toggle="offcanvas" href="#mobile-menu" class="btn-menu d-lg-none"><i
+                        class="ri-menu-line"></i></a>
+                <div class="logo"><img src="../img/logo-main.svg"></div>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <span class="text-white d-none d-lg-block">thomas@gmail.com</span>
+                <div class="user-head small">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                </div>
+                <div class="notification" data-bs-toggle="offcanvas" href="#notification">
+                    <div class="dot"></div>
+                    <i class="ri-notification-3-line"></i>
+                </div>
+                <!-- <i class="ri-arrow-drop-down-line text-white"></i> -->
+            </div>
+        </div>
+    </header>
+    <!-- notification` -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notification" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Notifications</h5>
+            <a data-bs-dismiss="offcanvas">
+                <i class="ri-close-circle-fill fs-24"></i>
+            </a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-between mb-2">
+                <span class="font-weight-600 fs-14">Today</span>
+                <span class="fs-14">Clear All</span>
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile Menu` -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column gap-2">
+                <div class="user-head-big">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                </div>
+                <div>
+                    <div class="fs-18">Thomas Miller</div>
+                    <div class="fs-14 text-dim text-decration-none">thomas@gmail.com</div>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="player-dashboard.html" class="active">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="player-class.html">My Class </a>
+                    </li>
+                    <li>
+                        <a href="player-court-booking.html">My Court Booking</a>
+                    </li>
+                    <li>
+                        <a href="player-subscriptions.html">Subscription Packages</a>
+                    </li>
+                    <li>
+                        <a href="player-account-settings.html">Account Settings</a>
+                    </li>
+                    <li>
+                        <a href="../index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
+                        class="ri-add-circle-line"></i>&nbsp;Create</a>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+    <!-- end header -->
+
+    <section class="pt-4 pt-lg-5 padding-bottom fit-height">
+        <div class="container-xl">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- header -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="text-heading fs-18 d-flex align-items-center gap-2">
+                            <a href="player-dashboard.html" class="text-decoration-none text-color btn-back"><i
+                                    class="ri-arrow-left-line"></i></a>
+                            Profile Details
+                        </h2>
+                    </div>
+                    <div class="d-flex justify-content-center side-bar">
+                        <div class="text-center d-flex flex-column align-items-center">
+                            <div class="profile-pic mb-3 fs-24">
+                                <img
+                                    src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                            </div>
+                            <h3 class="fs-16 text-heading m-0 p-0">Thomas Miller</h3>
+                            <span class="fs-14 text-color">Advanced</span>
+                            <a href="view-profile.html" class="btn-view-all mt-3">View Profile</a>
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex tab-manin-prof gap-2 scroll-all">
+                        <a href="profile-details.html" class="w-100">Your Assessment</a>
+                        <a href="your-evaluation.html" class="w-100">Your Evaluation</a>
+                        <a href="badges-earned.html" class="w-100 active">Badges earned</a>
+                    </div>
+                    <div class="row">
+                        <div
+                            class="col-lg-3 text-center d-flex flex-column justify-content-center align-items-center gap-2">
+                            <svg width="86" height="86" viewBox="0 0 86 86" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="43" cy="43" r="42.5" fill="#CCCCCC" />
+                                <circle cx="43" cy="43" r="42.5" fill="white" />
+                                <circle cx="43" cy="43" r="42.5" stroke="#FF5C5C" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M41.2495 25.5879C37.593 25.9509 34.2675 27.4395 31.6245 29.7022C34.9576 32.5557 37.2053 36.6403 37.6631 41.2515H41.2495V25.5879ZM31.6245 56.3008C34.2675 58.5635 37.593 60.052 41.2495 60.4151V44.7515H37.6631C37.2053 49.3627 34.9576 53.4473 31.6245 56.3008ZM44.7495 60.4151C48.4061 60.052 51.7315 58.5635 54.3745 56.3008C51.0415 53.4473 48.7938 49.3627 48.3359 44.7515H44.7495V60.4151ZM54.3745 29.7022C51.7315 27.4395 48.4061 25.9509 44.7495 25.5879V41.2515H48.3359C48.7938 36.6403 51.0415 32.5557 54.3745 29.7022ZM56.798 32.2367C58.7799 34.7736 60.0775 37.871 60.4131 41.2515H51.8578C52.3084 37.6385 54.1356 34.4531 56.798 32.2367ZM60.4131 44.7515C60.0775 48.1319 58.7799 51.2294 56.798 53.7662C54.1356 51.5499 52.3084 48.3644 51.8578 44.7515H60.4131ZM29.2011 53.7662C27.2192 51.2294 25.9216 48.1319 25.5859 44.7515H34.1412C33.6907 48.3644 31.8635 51.5499 29.2011 53.7662ZM25.5859 41.2515C25.9216 37.871 27.2191 34.7736 29.2011 32.2367C31.8635 34.4531 33.6907 37.6385 34.1412 41.2515H25.5859Z"
+                                    fill="#FF5C5C" />
+                            </svg>
+                            <div class="fs-16 text-color">
+                                Most Improved
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-3 text-center d-flex flex-column justify-content-center align-items-center gap-2">
+                            <svg width="86" height="86" viewBox="0 0 86 86" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="43" cy="43" r="42.5" fill="#CCCCCC" />
+                                <circle cx="43" cy="43" r="42.5" fill="white" />
+                                <circle cx="43" cy="43" r="42.5" stroke="#01B2FB" />
+                                <path
+                                    d="M36 44.75C35.0335 44.75 34.25 45.5335 34.25 46.5C34.25 47.4665 35.0335 48.25 36 48.25C36.9665 48.25 37.75 47.4665 37.75 46.5C37.75 45.5335 36.9665 44.75 36 44.75Z"
+                                    fill="#01B2FB" />
+                                <path
+                                    d="M50 41.25C50.9665 41.25 51.75 40.4665 51.75 39.5C51.75 38.5335 50.9665 37.75 50 37.75C49.0335 37.75 48.25 38.5335 48.25 39.5C48.25 40.4665 49.0335 41.25 50 41.25Z"
+                                    fill="#01B2FB" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M27.25 38.45C27.25 34.5296 27.25 32.5694 28.013 31.0721C28.6841 29.7549 29.7549 28.6841 31.0721 28.013C32.5694 27.25 34.5296 27.25 38.45 27.25H47.55C51.4704 27.25 53.4306 27.25 54.9279 28.013C56.2451 28.6841 57.3159 29.7549 57.987 31.0721C58.75 32.5694 58.75 34.5296 58.75 38.45V47.55C58.75 51.4704 58.75 53.4306 57.987 54.9279C57.3159 56.2451 56.2451 57.3159 54.9279 57.987C53.4306 58.75 51.4704 58.75 47.55 58.75H38.45C34.5296 58.75 32.5694 58.75 31.0721 57.987C29.7549 57.3159 28.6841 56.2451 28.013 54.9279C27.25 53.4306 27.25 51.4704 27.25 47.55V38.45ZM36 41.25C33.1005 41.25 30.75 43.6005 30.75 46.5C30.75 51.4 35.5333 55.25 43 55.25C47.4672 55.25 50.8903 53.9264 53 51.7732C53.6764 51.0829 53.6651 49.9749 52.9747 49.2985C52.2844 48.6221 51.1764 48.6334 50.5 49.3237C49.2275 50.6224 46.8173 51.75 43 51.75C41.1861 51.75 39.7049 51.5072 38.5115 51.1114C40.1431 50.2209 41.25 48.4897 41.25 46.5C41.25 43.6005 38.8995 41.25 36 41.25ZM50 44.75C47.1005 44.75 44.75 42.3995 44.75 39.5C44.75 37.5103 45.8569 35.7791 47.4885 34.8886C46.2951 34.4928 44.8139 34.25 43 34.25C39.1827 34.25 36.7725 35.3776 35.5 36.6763C34.8236 37.3666 33.7156 37.3779 33.0253 36.7015C32.3349 36.0251 32.3236 34.9171 33 34.2268C35.1097 32.0736 38.5328 30.75 43 30.75C50.4667 30.75 55.25 34.6 55.25 39.5C55.25 42.3995 52.8995 44.75 50 44.75Z"
+                                    fill="#01B2FB" />
+                            </svg>
+
+                            <div class="fs-16 text-color">
+                                Most dedicated
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-3 text-center d-flex flex-column justify-content-center align-items-center gap-2">
+                            <svg width="86" height="86" viewBox="0 0 86 86" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="43" cy="43" r="42.5" fill="#CCCCCC" />
+                                <circle cx="43" cy="43" r="42.5" fill="white" />
+                                <circle cx="43" cy="43" r="42.5" stroke="#9089FC" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M48.3039 31.6233C48.2443 31.1437 47.8582 30.75 47.375 30.75H38.625C38.1418 30.75 37.7557 31.1437 37.6961 31.6233C37.3018 34.791 34.791 37.3018 31.6233 37.6961C31.1437 37.7557 30.75 38.1418 30.75 38.625V47.375C30.75 47.8582 31.1437 48.2443 31.6233 48.3039C34.791 48.6982 37.3018 51.209 37.6961 54.3767C37.7557 54.8563 38.1418 55.25 38.625 55.25H47.375C47.8582 55.25 48.2443 54.8563 48.3039 54.3767C48.6982 51.209 51.209 48.6982 54.3767 48.3039C54.8563 48.2443 55.25 47.8582 55.25 47.375V38.625C55.25 38.1418 54.8563 37.7557 54.3767 37.6961C51.209 37.3018 48.6982 34.791 48.3039 31.6233Z"
+                                    fill="#9089FC" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M27.25 30.75C27.25 28.817 28.817 27.25 30.75 27.25C32.683 27.25 34.25 28.817 34.25 30.75C34.25 32.683 32.683 34.25 30.75 34.25C28.817 34.25 27.25 32.683 27.25 30.75ZM55.25 27.25C53.317 27.25 51.75 28.817 51.75 30.75C51.75 32.683 53.317 34.25 55.25 34.25C57.183 34.25 58.75 32.683 58.75 30.75C58.75 28.817 57.183 27.25 55.25 27.25ZM55.25 51.75C53.317 51.75 51.75 53.317 51.75 55.25C51.75 57.183 53.317 58.75 55.25 58.75C57.183 58.75 58.75 57.183 58.75 55.25C58.75 53.317 57.183 51.75 55.25 51.75ZM30.75 51.75C28.817 51.75 27.25 53.317 27.25 55.25C27.25 57.183 28.817 58.75 30.75 58.75C32.683 58.75 34.25 57.183 34.25 55.25C34.25 53.317 32.683 51.75 30.75 51.75Z"
+                                    fill="#9089FC" />
+                            </svg>
+
+                            <div class="fs-16 text-color">
+                                Great fun
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-3 text-center d-flex flex-column justify-content-center align-items-center gap-2">
+                            <svg width="86" height="86" viewBox="0 0 86 86" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="43" cy="43" r="42.5" fill="#CCCCCC" />
+                                <circle cx="43" cy="43" r="42.5" fill="white" />
+                                <circle cx="43" cy="43" r="42.5" stroke="#1DCBA7" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M25.5 43C25.5 33.335 33.335 25.5 43 25.5C52.665 25.5 60.5 33.335 60.5 43C60.5 52.665 52.665 60.5 43 60.5C33.335 60.5 25.5 52.665 25.5 43ZM49.4874 40.7374C50.1709 40.054 50.1709 38.946 49.4874 38.2626C48.804 37.5791 47.696 37.5791 47.0126 38.2626L41.25 44.0251L38.9874 41.7626C38.304 41.0791 37.196 41.0791 36.5126 41.7626C35.8291 42.446 35.8291 43.554 36.5126 44.2374L40.0126 47.7374C40.696 48.4209 41.804 48.4209 42.4874 47.7374L49.4874 40.7374Z"
+                                    fill="#1DCBA7" />
+                            </svg>
+
+                            <div class="fs-16 text-color">
+                                Strong Forehand
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+
+    <!-- modal for create button -->
+    <!-- =========================================== -->
+    <div class="modal fade" id="help" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mental Subcomponents</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Self-esteem</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">Belief in my own abilities and value as a player.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Confidence</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">Assurance and belief in my skills and performance on the court.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Independence</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">Ability to think and act for myself during matches, without relying
+                            on others.</p>
+
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Discipline</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">ability to stay composed and level-headed, especially in
+                            high-pressure situations on the court.</p>
+
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Concentration</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">My ability to focus and mental clarity needed to execute shots and
+                            make strategic decisions during a match.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Goal Setting</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">the process of setting specific and achievable objectives to work
+                            towards, whether it's improving a specific skill or achieving a certain ranking.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Sportsmanship</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">the respect and fair play shown towards opponents, officials, and
+                            the game itself.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Competitiveness</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">the desire to win and the drive to push myself to perform at my best
+                            against opponents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+
+    <footer class="py-5">
+        <div class="container-xl text-center text-white fs-13 opacity-75">
+            © Copyright ChampionshipHubb 2023 Design by Creotopi
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" />
+
+    <script>
+        $(document).on('change', '.file-input', function () {
+            var filesCount = $(this)[0].files.length;
+            var textbox = $(this).prev();
+            if (filesCount === 1) {
+                var fileName = $(this).val().split('\\').pop();
+                textbox.text(fileName);
+            } else {
+                textbox.text(filesCount + ' files selected');
+            }
+        });
+        $(document).ready(function () {
+            $('.progressWrapper progress').each(function () {
+                var prgsVal = $(this).data('value');
+                var maxN = $(this).attr('max');
+                var pop = prgsVal / maxN * 100
+
+                $(this).prev().css('left', pop + '%').text(prgsVal);
+                $(this).val(prgsVal);
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

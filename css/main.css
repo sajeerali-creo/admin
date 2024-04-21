@@ -2004,14 +2004,13 @@ label.form-check-label:focus,
   align-items: center;
   padding: 20px 20px;
   font-size: 16px;
-  background-color: var(--white);
   border-radius: 35px;
-  border: 1px solid #f1f1f1;
+  background-color: #fff;
   color: var(--text);
 }
 .tab-manin-prof .active {
-  color: var(--primary);
-  border-color: var(--primary);
+  color: var(--white);
+  background-color: #333;
 }
 
 .sub-manin-prof {
@@ -2030,8 +2029,9 @@ label.form-check-label:focus,
   border: 1px solid #f1f1f1;
 }
 .sub-manin-prof .active {
-  background-color: #000000;
-  color: var(--white);
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .nav-pills .nav-link {

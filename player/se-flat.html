@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChampionsHubb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <!-- =========================================== -->
+    <header class="header-autharized d-flex align-items-center">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <div class="d-flex gap-2 align-items-center">
+                <a data-bs-toggle="offcanvas" href="#mobile-menu" class="btn-menu d-lg-none"><i
+                        class="ri-menu-line"></i></a>
+                <div class="logo"><img src="../img/logo-main.svg"></div>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <span class="text-white d-none d-lg-block">thomas@gmail.com</span>
+                <div class="user-head small">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                </div>
+                <div class="notification" data-bs-toggle="offcanvas" href="#notification">
+                    <div class="dot"></div>
+                    <i class="ri-notification-3-line"></i>
+                </div>
+                <!-- <i class="ri-arrow-drop-down-line text-white"></i> -->
+            </div>
+        </div>
+    </header>
+    <!-- notification` -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notification" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Notifications</h5>
+            <a data-bs-dismiss="offcanvas">
+                <i class="ri-close-circle-fill fs-24"></i>
+            </a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-between mb-2">
+                <span class="font-weight-600 fs-14">Today</span>
+                <span class="fs-14">Clear All</span>
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile Menu` -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column gap-2">
+                <div class="user-head-big">
+                    <img
+                        src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                </div>
+                <div>
+                    <div class="fs-18">Thomas Miller</div>
+                    <div class="fs-14 text-dim text-decration-none">thomas@gmail.com</div>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="player-dashboard.html" class="active">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="player-class.html">My Class </a>
+                    </li>
+                    <li>
+                        <a href="player-court-booking.html">My Court Booking</a>
+                    </li>
+                    <li>
+                        <a href="player-subscriptions.html">Subscription Packages</a>
+                    </li>
+                    <li>
+                        <a href="player-account-settings.html">Account Settings</a>
+                    </li>
+                    <li>
+                        <a href="../index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
+                        class="ri-add-circle-line"></i>&nbsp;Create</a>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+    <!-- end header -->
+
+    <section class="pt-4 pt-lg-5 padding-bottom fit-height">
+        <div class="container-xl">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- header -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="text-heading fs-18 d-flex align-items-center gap-2">
+                            <a href="ev-technical.html" class="text-decoration-none text-color btn-back"><i
+                                    class="ri-arrow-left-line"></i></a>
+                                    Serve
+                        </h2>
+                    </div>
+                   
+                    <div class="d-flex sub-manin-prof gap-2 scroll-all">
+                        <a href="serve.html">Basic</a>
+                        <a href="se-flat.html" class="active">Flat</a>
+                        <a href="se-slice.html">Slice</a>
+                        <a href="se-kick.html">Kick</a>
+                    </div>
+
+                    <div class="font-weight-600 fs-14">Preparation</div>
+
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Feet firmly on the ground</div>
+
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Turn your body sideways to the net</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-blank-circle-line text-color"></i></div>
+                        <div class="fs-14 text-color">Ideally, using a continental grip</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Head, eyes will look over your shoulder at your target.</div>
+                    </div>
+                    <div class="font-weight-600 fs-14 mt-3">Stance</div>
+
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Platform-Wide or pinpoint stance</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Start with your feet shoulder-width apart</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Bend your knees and get into a balanced stance</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Toss the ball up in front of you with your non-hitting hand</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Bring your racket back behind you in preparation for the serve</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Step forward with your front foot and explode up to hit the ball</div>
+                    </div>
+                    
+                   
+                    <div class="font-weight-600 fs-14 mt-3">Backswing</div>
+
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Hold the racket with a firm grip and bring it back with a controlled motion</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Keep your toss arm extended and your hitting hand relaxed</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Keep the racket head up and make L formation with your hitting arm</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Keep your eyes on the ball throughout the serve motion</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Maintain a smooth and consistent rhythmic motion backswing tempo</div>
+                    </div>
+                    
+                    <div class="font-weight-600 fs-14 mt-3">Contact point</div>
+
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Eyes on the ball</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Contact point in front of the body</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Toss the ball in front of the body</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Hit the ball at highest point in front of you for maximum power</div>
+                    </div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Racket head pointing towards the target</div>
+                    </div>
+                   
+                    
+                    
+                    <div class="font-weight-600 fs-14 mt-3">Follow through</div>
+                    <div class="d-flex py-3 border-bottom gap-2 align-items-center">
+                        <div><i class="ri-checkbox-circle-fill text-success"></i></div>
+                        <div class="fs-14 text-color">Finish by snaping your wrist and racket across your body.</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- modal for create button -->
+    <!-- =========================================== -->
+    <div class="modal fade" id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Select Booking Type</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex gap-3">
+                        <div class="w-100 court">
+                            <a href="court-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                                Court
+                            </a>
+                        </div>
+                        <div class="w-100 class">
+                            <a href="class-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                                Classes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+
+    <footer class="py-5">
+        <div class="container-xl text-center text-white fs-13 opacity-75">
+            © Copyright ChampionshipHubb 2023 Design by Creotopi
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" />
+
+    <script>
+        $(document).on('change', '.file-input', function () {
+            var filesCount = $(this)[0].files.length;
+            var textbox = $(this).prev();
+            if (filesCount === 1) {
+                var fileName = $(this).val().split('\\').pop();
+                textbox.text(fileName);
+            } else {
+                textbox.text(filesCount + ' files selected');
+            }
+        });
+        $(document).ready(function () {
+            $('.progressWrapper progress').each(function () {
+                var prgsVal = $(this).data('value');
+                var maxN = $(this).attr('max');
+                var pop = prgsVal / maxN * 100
+
+                $(this).prev().css('left', pop + '%').text(prgsVal);
+                $(this).val(prgsVal);
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
