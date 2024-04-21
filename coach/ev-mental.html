@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChampionsHubb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <!-- header -->
+    <!-- =========================================== -->
+    <header class="header-autharized d-flex align-items-center">
+        <div class="container-xl d-flex align-items-center justify-content-between">
+            <div class="d-flex gap-2 align-items-center">
+                <a data-bs-toggle="offcanvas" href="#mobile-menu" class="btn-menu d-lg-none"><i
+                        class="ri-menu-line"></i></a>
+                <div class="logo"><img src="../img/logo-main.svg"></div>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+                <span class="text-white d-none d-lg-block">thomas@gmail.com</span>
+                <div class="user-head small">
+                    <img src="https://www.worldphoto.org/sites/default/files/default-media/Piercy.jpg">
+                </div>
+                <div class="notification" data-bs-toggle="offcanvas" href="#notification">
+                    <div class="dot"></div>
+                    <i class="ri-notification-3-line"></i>
+                </div>
+                <!-- <i class="ri-arrow-drop-down-line text-white"></i> -->
+            </div>
+        </div>
+    </header>
+    <!-- notification` -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notification" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Notifications</h5>
+            <a data-bs-dismiss="offcanvas">
+                <i class="ri-close-circle-fill fs-24"></i>
+            </a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-between mb-2">
+                <span class="font-weight-600 fs-14">Today</span>
+                <span class="fs-14">Clear All</span>
+            </div>
+            <div class="d-flex gap-2 flex-column">
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                    <div class="dot-active"></div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 bg-gray d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <div class="head">
+                            <img src="../img/head.webp">
+                        </div>
+                        <div class="fs-13">
+                            <strong>
+                                Cody Fisher
+                            </strong>
+                            classes subscription is about to expire.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile Menu` -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body d-flex flex-column">
+            <div class="d-flex flex-column gap-2">
+                <div class="user-head-big">
+                    <img src="https://www.worldphoto.org/sites/default/files/default-media/Piercy.jpg">
+                </div>
+                <div>
+                    <div class="fs-18">Thomas Miller</div>
+                    <div class="fs-14 text-dim text-decration-none">thomas@gmail.com</div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <ul>
+                    <li>
+                        <a href="coach-profile.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="coach-class.html">My Class</a>
+                    </li>
+                    <li>
+                        <a href="coach-student.html" class="active">My Student</a>
+                    </li>
+                    <li>
+                        <a href="coach-calender.html">My Calender</a>
+                    </li>
+                    <li>
+                        <a href="coach-account-settings.html">Account Settings</a>
+                    </li>
+                    <li>
+                        <a href="../index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- =========================================== -->
+    <!-- end header -->
+
+    <section class="pt-4 pt-lg-5 padding-bottom fit-height">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- header -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="text-heading fs-18 d-flex align-items-center gap-2">
+                            <a href="player-dashboard.html" class="text-decoration-none text-color btn-back"><i
+                                    class="ri-arrow-left-line"></i></a>
+                            Profile Details
+                        </h2>
+                    </div>
+                    <div class="d-flex justify-content-center side-bar">
+                        <div class="text-center d-flex flex-column align-items-center">
+                            <div class="profile-pic mb-3 fs-24">
+                                <img
+                                    src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=JSBpwVFm8vz23PZ44Rjn728NwmMtBa_DYL7qxrEWr38=">
+                            </div>
+                            <h3 class="fs-16 text-heading m-0 p-0">Thomas Miller</h3>
+                            <span class="fs-14 text-color">Advanced</span>
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex tab-manin-prof gap-2 scroll-all mb-4">
+                        <a href="evaluate.html" class="w-100">Assessment</a>
+                        <a href="your-evaluation.html" class="w-100 active">Evaluation</a>
+                        <a href="give-badges.html" class="w-100 ">Give Badges</a>
+                    </div>
+                    <div class="d-flex sub-manin-prof gap-2 scroll-all">
+                        <a href="your-evaluation.html">Physical</a>
+                        <a href="ev-technical.html">Technical</a>
+                        <a href="ev-tactical.html">Tactical</a>
+                        <a href="ev-strategic.html">Strategic</a>
+                        <a href="ev-mental.html" class="active">Mental</a>
+                        <a href="ev-environmental.html">Environmental</a>
+                    </div>
+
+                    <div
+                        class="py-2 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between mb-2 border-bottom">
+                        <h3 class="fs-14">Checkpoints</h3>
+                        <div>
+                            <a data-bs-toggle="modal" data-bs-target="#help">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 14C3.134 14 0 10.866 0 7C0 3.134 3.134 0 7 0C10.866 0 14 3.134 14 7C14 10.866 10.866 14 7 14ZM6.3 9.1V10.5H7.7V9.1H6.3ZM7.7 7.94857C8.71199 7.64736 9.45 6.70985 9.45 5.6C9.45 4.2469 8.3531 3.15 7 3.15C5.8114 3.15 4.82046 3.99643 4.59712 5.11942L5.97016 5.39404C6.06592 4.91276 6.49061 4.55 7 4.55C7.57988 4.55 8.05 5.0201 8.05 5.6C8.05 6.17988 7.57988 6.65 7 6.65C6.61339 6.65 6.3 6.96339 6.3 7.35V8.4H7.7V7.94857Z"
+                                        fill="#00AFFF" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Self-esteem (80%)</div>
+
+                                <div class="d-flex gap-2">
+                                    <div>Very Good</div>
+                                    <a data-bs-toggle="modal" data-bs-target="#edit-progress" class="text-color"><i
+                                            class="ri-pencil-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="round-handle" style="left: 80%;"></div>
+                                <div class="progress">
+                                    <div class="progress-bar very-good-fill" role="progressbar"
+                                        aria-label="Basic example" style="width: 80%" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Confidence (65%)</div>
+
+                                <div class="d-flex gap-2">
+                                    <div>Good</div>
+                                    <a data-bs-toggle="modal" data-bs-target="#edit-progress" class="text-color"><i
+                                            class="ri-pencil-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="round-handle" style="left: 65%;"></div>
+                                <div class="progress">
+                                    <div class="progress-bar good-fill" role="progressbar" aria-label="Basic example"
+                                        style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Independence (70%)</div>
+                                <div class="d-flex gap-2">
+                                    <div>Good</div>
+                                    <a data-bs-toggle="modal" data-bs-target="#edit-progress" class="text-color"><i
+                                            class="ri-pencil-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="round-handle" style="left: 70%;"></div>
+                                <div class="progress">
+                                    <div class="progress-bar good-fill" role="progressbar" aria-label="Basic example"
+                                        style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Discipline (40%)</div>
+                                <div class="d-flex gap-2">
+                                    <div>Average</div>
+                                    <a data-bs-toggle="modal" data-bs-target="#edit-progress" class="text-color"><i
+                                            class="ri-pencil-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="round-handle" style="left: 40%;"></div>
+                                <div class="progress">
+                                    <div class="progress-bar average-fill" role="progressbar" aria-label="Basic example"
+                                        style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Temperament (40%)</div>
+                                <div class="d-flex gap-2">
+                                    <div>Average</div>
+                                    <a data-bs-toggle="modal" data-bs-target="#edit-progress" class="text-color"><i
+                                            class="ri-pencil-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="round-handle" style="left: 40%;"></div>
+                                <div class="progress">
+                                    <div class="progress-bar average-fill" role="progressbar" aria-label="Basic example"
+                                        style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Concentration (92%)</div>
+                                <div class="d-flex gap-2">
+                                    <div>Excellent</div>
+                                    <a data-bs-toggle="modal" data-bs-target="#edit-progress" class="text-color"><i
+                                            class="ri-pencil-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="round-handle" style="left: 98%;"></div>
+                                <div class="progress">
+                                    <div class="progress-bar excellent-fill" role="progressbar"
+                                        aria-label="Basic example" style="width: 98%" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Sportsmanship (82%)</div>
+                                <div class="d-flex gap-2">
+                                    <div>Very Good</div>
+                                    <a data-bs-toggle="modal" data-bs-target="#edit-progress" class="text-color"><i
+                                            class="ri-pencil-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="round-handle" style="left: 82%;"></div>
+                                <div class="progress">
+                                    <div class="progress-bar very-good-fill" role="progressbar"
+                                        aria-label="Basic example" style="width: 82%" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex justify-content-between align-items-center fs-14 mb-2 mt-2">
+                                <div>Competitive Readiness (82%)</div>
+                                <div class="d-flex gap-2">
+                                    <div>Very Good</div>
+                                    <a data-bs-toggle="modal" data-bs-target="#edit-progress" class="text-color"><i
+                                            class="ri-pencil-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="round-handle" style="left: 82%;"></div>
+                                <div class="progress">
+                                    <div class="progress-bar very-good-fill" role="progressbar"
+                                        aria-label="Basic example" style="width: 82%" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="py-2 d-flex flex-column align-items-lg-center flex-lg-row justify-content-between mb-2 border-bottom">
+                        <h3 class="fs-14">Overall mental checkpoints</h3>
+                    </div>
+
+                    <div class="d-flex mt-4">
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="progress-v2">
+                                <div class="progress" data-percentage="70">
+                                    <span class="progress-left">
+                                        <span class="progress-bar very-good"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar very-good"></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>
+                                            70%<br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex mb-2">
+                                    <h3 class="fs-14">Average</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- modal for create button -->
+    <!-- =========================================== -->
+    <div class="modal fade" id="edit-progress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Rating Scale</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div>Motor Skills </div>
+                        <div>Very Good</div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="round-handle" style="left: 82%;"></div>
+                        <div class="progress">
+                            <div class="progress-bar very-good-fill" role="progressbar" aria-label="Basic example"
+                                style="width: 82%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer px-5 pb-4">
+                    <a href="#" class="btn btn-primary">Update</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+    <div class="modal fade" id="help" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mental Subcomponents</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Self-esteem</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">Belief in my own abilities and value as a player.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Confidence</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">Assurance and belief in my skills and performance on the court.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Independence</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">Ability to think and act for myself during matches, without relying
+                            on others.</p>
+
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Discipline</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">ability to stay composed and level-headed, especially in
+                            high-pressure situations on the court.</p>
+
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Concentration</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">My ability to focus and mental clarity needed to execute shots and
+                            make strategic decisions during a match.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Goal Setting</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">the process of setting specific and achievable objectives to work
+                            towards, whether it's improving a specific skill or achieving a certain ranking.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Sportsmanship</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">the respect and fair play shown towards opponents, officials, and
+                            the game itself.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <h3 class="fs-14 tag-bg">Competitiveness</h3>
+                        </div>
+                        <p class="fs-14 opacity-50">the desire to win and the drive to push myself to perform at my best
+                            against opponents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================== -->
+
+    <footer class="py-5">
+        <div class="container-xl text-center text-white fs-13 opacity-75">
+            © Copyright ChampionshipHubb 2023 Design by Creotopi
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).on('change', '.file-input', function () {
+            var filesCount = $(this)[0].files.length;
+            var textbox = $(this).prev();
+            if (filesCount === 1) {
+                var fileName = $(this).val().split('\\').pop();
+                textbox.text(fileName);
+            } else {
+                textbox.text(filesCount + ' files selected');
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

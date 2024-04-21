@@ -1060,6 +1060,55 @@ hr {
   height: 16px;
 }
 
+.lock {
+  display: flex;
+  width: 86px;
+  height: 86px;
+  border-radius: 160px;
+  align-items: center;
+  justify-content: center;
+  color: var(--danger);
+  border: 1px solid #e1e1e1;
+  font-size: 28px;
+}
+.lock:hover {
+  color: var(--danger);
+}
+
+.unlock {
+  display: flex;
+  width: 86px;
+  height: 86px;
+  border-radius: 160px;
+  align-items: center;
+  justify-content: center;
+  color: var(--success);
+  border: 1px solid #e1e1e1;
+  font-size: 28px;
+}
+
+.block-card {
+  border: 1px solid #f1f1f1;
+  border-radius: 6px;
+}
+
+.progress {
+  position: relative;
+}
+
+.round-handle {
+  position: absolute;
+  border-radius: 160px;
+  width: 21px;
+  height: 21px;
+  background: #ffffff;
+  border: 2px solid rgba(102, 102, 102, 0.4);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 0;
+  top: -5px;
+  z-index: 1;
+}
+
 .header-autharized {
   background-color: #101B37;
   height: 70px;
@@ -2007,6 +2056,7 @@ label.form-check-label:focus,
   border-radius: 35px;
   background-color: #fff;
   color: var(--text);
+  border: 1px solid #f1f1f1;
 }
 .tab-manin-prof .active {
   color: var(--white);
