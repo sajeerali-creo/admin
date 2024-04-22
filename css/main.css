@@ -1880,6 +1880,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-bottom: 1em;
 }
 
+.progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+}
+
 .form-label {
   font-size: 14px !important;
 }
