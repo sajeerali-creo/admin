@@ -1624,6 +1624,26 @@ h1, h2, h3, h4, h5, h6, p, ul {
   display: flex;
 }
 
+.border-success {
+  border: 1px solid var(--success) !important;
+  color: var(--success) !important;
+}
+
+.border-blue {
+  border: 1px solid #A1CAF0 !important;
+  color: #A1CAF0 !important;
+}
+
+.border-yellow {
+  border: 1px solid #BFA1F0 !important;
+  color: #BFA1F0 !important;
+}
+
+.border-purple {
+  border: 1px solid #F0DAA1 !important;
+  color: #F0DAA1 !important;
+}
+
 .padding-top {
   padding-top: 24px;
 }
