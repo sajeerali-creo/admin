@@ -1644,6 +1644,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: #F0DAA1 !important;
 }
 
+.light-br {
+  border: 1px solid #384361 !important;
+  background: none;
+}
+
 .padding-top {
   padding-top: 24px;
 }
