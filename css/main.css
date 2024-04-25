@@ -1930,6 +1930,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   }
 }
 
+.form-select {
+  height: 46px !important;
+}
+
 .form-check-input:checked {
   background-color: var(--primary) !important;
   border: 0;
