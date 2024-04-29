@@ -79,4 +79,10 @@
     border-radius: 20px;
     padding: 16px;
     text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
+    @media (min-width: 992px) {
+        width: 200px;
+        margin-bottom: 0px;
+    }
 }
