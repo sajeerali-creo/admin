@@ -2169,6 +2169,43 @@ label.form-check-label:focus,
   border-bottom: 3px solid var(--primary);
 }
 
+.tabs-balck {
+  margin-top: 16px;
+}
+.tabs-balck a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 35px;
+  min-width: 160px;
+  color: #666;
+}
+.tabs-balck .active {
+  background-color: #333;
+  color: #fff;
+}
+
+.tabs-options {
+  margin-top: 16px;
+}
+.tabs-options a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 35px;
+  min-width: 160px;
+  color: #666;
+}
+.tabs-options .active {
+  background-color: var(--primary);
+  color: #fff;
+}
+
 /*--------- Pager2 ---------*/
 .Pager2 .pagination .page-item .page-link:hover {
   transition: all 0.3s linear;
