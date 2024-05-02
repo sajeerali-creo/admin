@@ -148,7 +148,7 @@
             <div>
                 <ul>
                     <li>
-                        <a href="player-dashboard.html" class="active">Dashboard</a>
+                        <a href="player-dashboard.html">Dashboard</a>
                     </li>
                     <li>
                         <a href="player-class.html">My Class </a>
@@ -157,7 +157,7 @@
                         <a href="player-court-booking.html">My Court Booking</a>
                     </li>
                     <li>
-                        <a href="player-subscriptions.html">My Subscription</a>
+                        <a href="player-subscriptions.html" class="active">My Subscription</a>
                     </li>
                     <li>
                         <a href="player-account-settings.html">Account Settings</a>
@@ -169,7 +169,7 @@
             </div>
             <div>
                 <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
-                    class="ri-add-circle-line"></i>&nbsp;Create</a>
+                        class="ri-add-circle-line"></i>&nbsp;Create</a>
             </div>
         </div>
     </div>
@@ -193,7 +193,7 @@
                         <div class="menus padding-bottom mt-5">
                             <ul>
                                 <li>
-                                    <a href="player-dashboard.html" class="active">Dashboard</a>
+                                    <a href="player-dashboard.html">Dashboard</a>
                                 </li>
                                 <li>
                                     <a href="player-class.html">My Classes</a>
@@ -202,7 +202,7 @@
                                     <a href="player-court-booking.html">My Court Booking</a>
                                 </li>
                                 <li>
-                                    <a href="player-subscriptions.html">My Subscription</a>
+                                    <a href="player-subscriptions.html" class="active">My Subscription</a>
                                 </li>
                                 <li>
                                     <a href="player-account-settings.html">Account Settings</a>
@@ -214,90 +214,105 @@
                         </div>
                         <div>
                             <a data-bs-toggle="modal" data-bs-target="#create" class="btn btn-primary w-100"><i
-                                class="ri-add-circle-line"></i>&nbsp;Create</a>
+                                    class="ri-add-circle-line"></i>&nbsp;Create</a>
                         </div>
                     </div>
 
                 </div>
                 <div class="col-lg-9">
-                    <!-- header -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h2 class="text-heading fs-18 d-flex align-items-center gap-2">
-                            <a href="player-dashboard.html" class="text-decoration-none text-color btn-back"><i
-                                    class="ri-arrow-left-line"></i></a>
-                            Class Details
+                            My Subscription 
                         </h2>
                     </div>
-
-                    <!-- details -->
-                    <div class="plain-card">
-                        <div class="border-bottom p-4 d-flex justify-content-between">
-                            <div>
-                                <span class="status no-show">No Show</span>
-                            </div>
+                    <div class="d-flex gap-2 tabs-balck my-3">
+                        <a href="player-subscriptions.html" class="active">Plans</a>
+                        <a href="player-sub-classes.html" >Classes</a>
+                    </div>
+                    <div class="plain-card p-3 d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex flex-column">
+                            <div class="fs-13 text-color">Private</div>
+                            <div class="fs-16 font-weight-600 text-heading">AED 2,350</div>
                         </div>
-                        <div class="p-4">
-                            <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Class Type</div>
-                                    <div class="fs-16 font-weight-600 text-heading">Private</div>
-                                </div>
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Time</div>
-                                    <div class="fs-16 font-weight-600 text-heading">06:00</div>
-                                </div>
-                            </div>
-
-                            <!-- <div class="d-flex flex-column flex-lg-row gap-3">
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Court No.</div>
-                                    <div class="fs-16 font-weight-600 text-heading">2</div>
-                                </div>
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between today-list">
-                                    <div class="fs-16 text-color">Date</div>
-                                    <div class="fs-16 font-weight-600 text-success">Today</div>
-                                </div>
-                            </div> -->
-
-                            <!-- ==============other cases like tommorow and spesifi date================ -->
-                            <div class="d-flex gap-3">
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Court No.</div>
-                                    <div class="fs-16 font-weight-600 text-heading">2</div>
-                                </div>
-                                <div class="plain-card p-3 w-100 d-flex justify-content-between">
-                                    <div class="fs-16 text-color">Date</div>
-                                    <div class="text-color d-flex gap-1 fs-16">
-                                        <div class="opacity-50"><i class="ri-calendar-2-line"></i></div>
-                                        <div class="font-weight-600">20 Feb 24</div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-
+                        <div>
+                            <span class="status completed">Active</span>
                         </div>
-                        <div class="p-4">
-                            <div class="mb-2">Coach</div>
-                            <div class="d-flex gap-2">
-                                <div class="head-user">
-                                    <img
-                                        src="https://img.freepik.com/premium-photo/beauty-portrait-brown-haired-woman-close-up-beautiful-hairstyle-natural-makeup-perfect-hair-dark-hair-girl-head-illustration_86390-6998.jpg">
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <div class="text-heading fs-14 font-weight-600">Arnel Berdan</div>
-                                    <div class="fs-13 text-color">ITF/USPTA Certified</div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="plain-card p-3 d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex flex-column">
+                            <div class="fs-13 text-color">Semi-Private</div>
+                            <div class="fs-16 font-weight-600 text-heading">AED 1,350</div>
                         </div>
-
-                       
+                        <div>
+                            <span class="status completed">Active</span>
+                        </div>
+                    </div>
+                    <div class="plain-card p-3 d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex flex-column">
+                            <div class="fs-13 text-color">Group</div>
+                            <div class="fs-16 font-weight-600 text-heading">AED 800</div>
+                        </div>
+                        <div>
+                            <a href="renew-class.html" class="btn btn-red d-flex align-items-center">Renew&nbsp;<i
+                                    class="ri-arrow-right-circle-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3 mt-3">
+                        <h2 class="text-heading fs-16 d-flex align-items-center">
+                            Billing Period
+                        </h2>
+                    </div>
+                    <div class="bg-white p-3 plain-card">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="table-light">
+                                    <th class="fs-13 text-heading">Type</th>
+                                    <th class="fs-13 text-heading">Billing Period</th>
+                                    <th class="fs-13 text-heading">Invoice #</th>
+                                    <th class="fs-13 text-heading">Amount</th>
+                                    <th class="fs-13 text-heading">Status</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="fs-13 text-color">Private</td>
+                                        <td class="fs-13 text-color">20 Jan 24<br>
+                                            20 Feb 24
+                                        </td>
+                                        <td class="fs-13 text-color">789027</td>
+                                        <td class="fs-13 text-color">AED 2,350</td>
+                                        <td class="fs-13 text-success">Paid</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-13 text-color">Private</td>
+                                        <td class="fs-13 text-color">20 Jan 24<br>
+                                            20 Feb 24
+                                        </td>
+                                        <td class="fs-13 text-color">789027</td>
+                                        <td class="fs-13 text-color">AED 2,350</td>
+                                        <td class="fs-13 text-success">Paid</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-13 text-color">Private</td>
+                                        <td class="fs-13 text-color">20 Jan 24<br>
+                                            20 Feb 24
+                                        </td>
+                                        <td class="fs-13 text-color">789027</td>
+                                        <td class="fs-13 text-color">AED 2,350</td>
+                                        <td class="fs-13 text-warning">Pending</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <small class="fs-12 text-color d-lg-none text-center w-100"><i class="ri-expand-left-right-line"></i>&nbsp;Scroll Left & right for view all</small>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-     <!-- modal for create button -->
+    <!-- modal for create button -->
     <!-- =========================================== -->
     <div class="modal fade" id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -309,12 +324,14 @@
                 <div class="modal-body">
                     <div class="d-flex gap-3">
                         <div class="w-100 court">
-                            <a href="court-booking.html" class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                            <a href="court-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
                                 Court
                             </a>
                         </div>
                         <div class="w-100 class">
-                            <a href="class-booking.html" class="w-100 h-100 d-flex text-center text-heading justify-content-center">
+                            <a href="class-booking.html"
+                                class="w-100 h-100 d-flex text-center text-heading justify-content-center">
                                 Classes
                             </a>
                         </div>
