@@ -1727,7 +1727,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .yrs-box {
-  background-color: #f1f1f1;
+  background-color: hsl(186, 100%, 92%);
+  background-image: radial-gradient(at 80% 50%, hsl(210, 100%, 76%) 0px, transparent 50%), radial-gradient(at 80% 100%, hsl(204, 100%, 70%) 0px, transparent 50%);
   border-radius: 20px;
   padding: 16px;
   text-align: center;
@@ -2176,7 +2177,7 @@ label.form-check-label:focus,
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 32px;
+  height: 42px;
   background-color: #fff;
   border-radius: 35px;
   min-width: 160px;
@@ -2194,7 +2195,7 @@ label.form-check-label:focus,
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 32px;
+  height: 42px;
   background-color: #fff;
   border: 1px solid #f1f1f1;
   border-radius: 35px;
@@ -2202,7 +2203,7 @@ label.form-check-label:focus,
   color: #666;
 }
 .tabs-options .active {
-  background-color: var(--primary);
+  background-color: #333;
   color: #fff;
 }
 

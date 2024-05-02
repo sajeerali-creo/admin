@@ -75,7 +75,10 @@
     
 }
 .yrs-box{
-    background-color: #f1f1f1;
+    background-color:hsla(186,100%,92%,1);
+    background-image:
+    radial-gradient(at 80% 50%, hsla(210,100%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(204,100%,70%,1) 0px, transparent 50%);
     border-radius: 20px;
     padding: 16px;
     text-align: center;

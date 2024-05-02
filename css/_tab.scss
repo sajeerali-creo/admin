@@ -26,7 +26,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 32px;
+        height: 42px;
         background-color: #fff;
         border-radius: 35px;
         min-width: 160px;
@@ -44,7 +44,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 32px;
+        height: 42px;
         background-color: #fff;
         border: 1px solid #f1f1f1;
         border-radius: 35px;
@@ -52,7 +52,7 @@
         color: #666;
     }
     .active{
-        background-color: var(--primary);
+        background-color: #333;
         color: #fff;
     }
 }
